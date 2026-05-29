@@ -1,11 +1,13 @@
 import React from "react";
 import {
   AbsoluteFill,
+  Audio,
   Sequence,
   useCurrentFrame,
   useVideoConfig,
   interpolate,
   spring,
+  staticFile,
 } from "remotion";
 
 // ─── Brand Constants ──────────────────────────────────────────────────────────
@@ -1451,5 +1453,31 @@ export const ArabicRootsVideo: React.FC = () => (
     <DarkFlash triggerFrame={1350} />
     <DarkFlash triggerFrame={1500} />
     <DarkFlash triggerFrame={1650} />
+
+    {/* Voiceover — replace public/voiceover.wav with your ElevenLabs export */}
+    <Audio src={staticFile("voiceover.wav")} volume={1} />
+
+    {/* Whoosh SFX at every scene transition */}
+    {[0, 150, 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500, 1650].map((f) => (
+      <Sequence key={`whoosh-${f}`} from={f} durationInFrames={13}>
+        <Audio src={staticFile("sfx-whoosh.wav")} volume={0.55} />
+      </Sequence>
+    ))}
+
+    {/* Ding — Scene 9 testimonial reveal (~0:40) */}
+    <Sequence from={1202} durationInFrames={18}>
+      <Audio src={staticFile("sfx-ding.wav")} volume={0.7} />
+    </Sequence>
+
+    {/* 3× Pop — Scene 11 pillar cards appearing (~0:50) */}
+    <Sequence from={1503} durationInFrames={4}>
+      <Audio src={staticFile("sfx-pop.wav")} volume={0.6} />
+    </Sequence>
+    <Sequence from={1518} durationInFrames={4}>
+      <Audio src={staticFile("sfx-pop.wav")} volume={0.6} />
+    </Sequence>
+    <Sequence from={1533} durationInFrames={4}>
+      <Audio src={staticFile("sfx-pop.wav")} volume={0.6} />
+    </Sequence>
   </AbsoluteFill>
 );
