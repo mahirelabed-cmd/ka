@@ -11,9 +11,10 @@ import {
 const FONT = "'Inter', 'Helvetica Neue', Arial, sans-serif";
 const RED = "#970000";
 const BRIGHT_RED = "#B91C1C";
-const BG = "#080808";
+const BG = "#FFFFFF";           // website white
+const TEXT = "#0f1729";         // website dark navy
 const WHITE = "#FFFFFF";
-const MUTED = "rgba(255,255,255,0.55)";
+const MUTED = "#6b7280";        // medium grey on white bg
 const PAD = 80;
 
 // ── FadeIn wrapper: opacity 0→1 over first N frames of local timeline ──────────
@@ -105,9 +106,9 @@ const Scene1: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 88,
+                fontSize: 110,
                 fontWeight: 900,
-                color: WHITE,
+                color: TEXT,
                 margin: 0,
                 lineHeight: 1.1,
                 letterSpacing: "-2px",
@@ -122,7 +123,7 @@ const Scene1: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 64,
+                fontSize: 80,
                 fontWeight: 400,
                 color: MUTED,
                 margin: 0,
@@ -187,9 +188,9 @@ const Scene2: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 100,
+                fontSize: 118,
                 fontWeight: 900,
-                color: WHITE,
+                color: TEXT,
                 margin: 0,
                 letterSpacing: "-3px",
                 lineHeight: 1,
@@ -204,7 +205,7 @@ const Scene2: React.FC = () => {
           <div
             style={{
               width: "100%",
-              height: 2,
+              height: 3,
               backgroundColor: RED,
               margin: "32px 0",
               opacity: dividerOpacity,
@@ -216,9 +217,9 @@ const Scene2: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 52,
+                fontSize: 65,
                 fontWeight: 700,
-                color: WHITE,
+                color: TEXT,
                 margin: 0,
                 lineHeight: 1.25,
               }}
@@ -299,7 +300,7 @@ const Scene3: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 80,
+                fontSize: 100,
                 fontWeight: 900,
                 color: WHITE,
                 margin: 0,
@@ -318,7 +319,7 @@ const Scene3: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 34,
+                fontSize: 44,
                 fontWeight: 400,
                 color: "rgba(255,255,255,0.85)",
                 margin: 0,
@@ -332,14 +333,14 @@ const Scene3: React.FC = () => {
           </div>
 
           {/* Divider */}
-          <div style={{ width: 60, height: 3, backgroundColor: WHITE, opacity: 0.5, marginBottom: 28 }} />
+          <div style={{ width: 80, height: 4, backgroundColor: WHITE, opacity: 0.5, marginBottom: 32 }} />
 
           {/* Stats */}
           <div style={statsSlide}>
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 28,
+                fontSize: 36,
                 fontWeight: 600,
                 color: WHITE,
                 margin: 0,
@@ -414,9 +415,9 @@ const CourseRow: React.FC<{ course: (typeof COURSES)[0]; index: number }> = ({
         <span
           style={{
             fontFamily: FONT,
-            fontSize: 26,
+            fontSize: 34,
             fontWeight: 700,
-            color: WHITE,
+            color: TEXT,
             display: "block",
             lineHeight: 1.2,
           }}
@@ -426,7 +427,7 @@ const CourseRow: React.FC<{ course: (typeof COURSES)[0]; index: number }> = ({
         <span
           style={{
             fontFamily: FONT,
-            fontSize: 18,
+            fontSize: 22,
             fontWeight: 400,
             color: MUTED,
           }}
@@ -461,9 +462,9 @@ const Scene4: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 72,
+                fontSize: 92,
                 fontWeight: 900,
-                color: WHITE,
+                color: TEXT,
                 margin: 0,
                 lineHeight: 1.1,
                 letterSpacing: "-2px",
@@ -513,7 +514,7 @@ const Scene5: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 72,
+                fontSize: 90,
                 fontWeight: 900,
                 color: WHITE,
                 margin: 0,
@@ -537,12 +538,12 @@ const Scene5: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 26,
+                fontSize: 34,
                 fontWeight: 400,
                 color: "rgba(255,255,255,0.85)",
                 margin: 0,
                 lineHeight: 1.5,
-                maxWidth: 880,
+                maxWidth: 920,
               }}
             >
               Arabisch verständlich, strukturiert und auf Deutsch zu vermitteln —
@@ -556,17 +557,17 @@ const Scene5: React.FC = () => {
               ...quoteSlide,
               backgroundColor: "rgba(0,0,0,0.18)",
               borderRadius: 8,
-              padding: "28px 32px",
-              borderLeft: `4px solid ${WHITE}`,
+              padding: "32px 36px",
+              borderLeft: `5px solid ${WHITE}`,
             }}
           >
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 22,
+                fontSize: 28,
                 fontWeight: 400,
                 color: WHITE,
-                margin: "0 0 8px",
+                margin: "0 0 10px",
               }}
             >
               ⭐⭐⭐⭐⭐
@@ -574,10 +575,10 @@ const Scene5: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 28,
+                fontSize: 34,
                 fontWeight: 600,
                 color: WHITE,
-                margin: "0 0 12px",
+                margin: "0 0 14px",
                 lineHeight: 1.4,
                 fontStyle: "italic",
               }}
@@ -587,7 +588,7 @@ const Scene5: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 20,
+                fontSize: 26,
                 fontWeight: 400,
                 color: "rgba(255,255,255,0.7)",
                 margin: 0,
@@ -631,9 +632,9 @@ const Scene6: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 96,
+                fontSize: 116,
                 fontWeight: 900,
-                color: WHITE,
+                color: TEXT,
                 margin: 0,
                 letterSpacing: "-3px",
                 lineHeight: 1,
@@ -649,7 +650,7 @@ const Scene6: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 28,
+                fontSize: 36,
                 fontWeight: 400,
                 color: MUTED,
                 margin: 0,
@@ -660,19 +661,19 @@ const Scene6: React.FC = () => {
           </div>
 
           {/* Primary CTA */}
-          <div style={{ ...ctaSlide, marginBottom: 24 }}>
+          <div style={{ ...ctaSlide, marginBottom: 28 }}>
             <div
               style={{
                 display: "inline-block",
                 backgroundColor: RED,
-                padding: "28px 56px",
-                borderRadius: 6,
+                padding: "32px 64px",
+                borderRadius: 8,
               }}
             >
               <span
                 style={{
                   fontFamily: FONT,
-                  fontSize: 36,
+                  fontSize: 44,
                   fontWeight: 800,
                   color: WHITE,
                   letterSpacing: "0.5px",
@@ -684,11 +685,11 @@ const Scene6: React.FC = () => {
           </div>
 
           {/* Secondary CTA */}
-          <div style={{ ...ctaSlide, marginBottom: 48 }}>
+          <div style={{ ...ctaSlide, marginBottom: 56 }}>
             <span
               style={{
                 fontFamily: FONT,
-                fontSize: 26,
+                fontSize: 32,
                 fontWeight: 600,
                 color: MUTED,
                 borderBottom: `1px solid ${MUTED}`,
@@ -704,8 +705,8 @@ const Scene6: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 28,
-                fontWeight: 600,
+                fontSize: 36,
+                fontWeight: 700,
                 color: RED,
                 margin: "0 0 8px",
                 letterSpacing: "1px",
@@ -716,7 +717,7 @@ const Scene6: React.FC = () => {
             <p
               style={{
                 fontFamily: FONT,
-                fontSize: 22,
+                fontSize: 28,
                 fontWeight: 400,
                 color: MUTED,
                 margin: 0,
@@ -764,12 +765,12 @@ export const ArabicRootsVideo: React.FC = () => {
       <DarkFlash triggerFrame={480} />
 
       {/* Scene 5: Qur'an / Vision */}
-      <Sequence from={480} durationInFrames={75}>
+      <Sequence from={480} durationInFrames={120}>
         <Scene5 />
       </Sequence>
 
       {/* Scene 6: CTA */}
-      <Sequence from={555} durationInFrames={45}>
+      <Sequence from={600} durationInFrames={120}>
         <Scene6 />
       </Sequence>
     </AbsoluteFill>
