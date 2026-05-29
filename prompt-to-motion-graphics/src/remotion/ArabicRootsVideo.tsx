@@ -9,13 +9,13 @@ import {
 } from "remotion";
 
 const RED = "#970000";
+const RED2 = "#c02020";
 const WHITE = "#FFFFFF";
-const CREAM = "#FFF8F0";
-const DARK_RED = "#5a0000";
+const DARK_RED = "#4a0000";
 
-// ── helpers ─────────────────────────────────────────────────────────────────
+// ── helpers ──────────────────────────────────────────────────────────────────
 
-const useFade = (start: number, duration = 20) => {
+const useFade = (start: number, duration = 18) => {
   const frame = useCurrentFrame();
   return interpolate(frame, [start, start + duration], [0, 1], {
     extrapolateLeft: "clamp",
@@ -23,91 +23,60 @@ const useFade = (start: number, duration = 20) => {
   });
 };
 
-const useSlideUp = (start: number, delay = 0) => {
+const useSlideUp = (start: number, distance = 70) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const progress = spring({ frame: frame - start - delay, fps, config: { damping: 14, stiffness: 80 } });
-  return interpolate(progress, [0, 1], [60, 0]);
+  const p = spring({ frame: frame - start, fps, config: { damping: 16, stiffness: 90 } });
+  return interpolate(p, [0, 1], [distance, 0]);
 };
 
-// ── decorative Arabic pattern background ─────────────────────────────────────
+// ── decorative geometric pattern ─────────────────────────────────────────────
 
-const PatternBg: React.FC<{ opacity?: number }> = ({ opacity = 0.07 }) => (
-  <svg
-    style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity }}
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    {Array.from({ length: 8 }).map((_, row) =>
-      Array.from({ length: 5 }).map((_, col) => (
-        <g key={`${row}-${col}`} transform={`translate(${col * 220 - 20},${row * 240 - 20})`}>
-          <polygon
-            points="110,0 220,55 220,165 110,220 0,165 0,55"
-            fill="none"
-            stroke={WHITE}
-            strokeWidth="1.5"
-          />
-          <polygon
-            points="110,30 190,72 190,155 110,197 30,155 30,72"
-            fill="none"
-            stroke={WHITE}
-            strokeWidth="0.8"
-          />
+const PatternBg: React.FC<{ opacity?: number }> = ({ opacity = 0.06 }) => (
+  <svg style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity }} xmlns="http://www.w3.org/2000/svg">
+    {Array.from({ length: 10 }).map((_, row) =>
+      Array.from({ length: 6 }).map((_, col) => (
+        <g key={`${row}-${col}`} transform={`translate(${col * 200 - 30},${row * 210 - 30})`}>
+          <polygon points="100,0 200,50 200,150 100,200 0,150 0,50" fill="none" stroke={WHITE} strokeWidth="1.2" />
+          <polygon points="100,28 172,64 172,136 100,172 28,136 28,64" fill="none" stroke={WHITE} strokeWidth="0.6" />
         </g>
       ))
     )}
   </svg>
 );
 
-// ── Arabic calligraphy SVG logo mark ─────────────────────────────────────────
+// ── logo mark SVG ─────────────────────────────────────────────────────────────
 
-const LogoMark: React.FC<{ size?: number; color?: string }> = ({ size = 80, color = RED }) => (
-  <svg width={size} height={size} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="50" cy="50" r="48" fill={color} />
-    <text
-      x="50"
-      y="65"
-      textAnchor="middle"
-      fontSize="42"
-      fill={WHITE}
-      fontFamily="serif"
-      fontWeight="bold"
-    >
-      ع
-    </text>
+const LogoMark: React.FC<{ size?: number; bgColor?: string; letterColor?: string }> = ({
+  size = 80, bgColor = RED, letterColor = WHITE,
+}) => (
+  <svg width={size} height={size} viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="48" fill={bgColor} />
+    <circle cx="50" cy="50" r="40" fill="none" stroke={letterColor} strokeWidth="1.5" opacity="0.3" />
+    <text x="50" y="66" textAnchor="middle" fontSize="46" fill={letterColor} fontFamily="Georgia, serif" fontWeight="bold">ع</text>
   </svg>
 );
 
-// ── phone mockup ──────────────────────────────────────────────────────────────
+// ── large phone mockup ────────────────────────────────────────────────────────
 
-const Phone: React.FC<{ children: React.ReactNode; scale?: number }> = ({ children, scale = 1 }) => (
-  <div
-    style={{
-      transform: `scale(${scale})`,
-      width: 280,
-      height: 560,
-      borderRadius: 40,
-      background: "#1a1a1a",
-      boxShadow: "0 30px 80px rgba(0,0,0,0.5), 0 0 0 2px #444",
-      overflow: "hidden",
-      position: "relative",
-      flexShrink: 0,
-    }}
-  >
-    {/* notch */}
-    <div
-      style={{
-        position: "absolute",
-        top: 0,
-        left: "50%",
-        transform: "translateX(-50%)",
-        width: 100,
-        height: 28,
-        background: "#1a1a1a",
-        borderRadius: "0 0 20px 20px",
-        zIndex: 10,
-      }}
-    />
-    <div style={{ width: "100%", height: "100%", borderRadius: 40, overflow: "hidden" }}>
+const Phone: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <div style={{
+    width: 480,
+    height: 960,
+    borderRadius: 56,
+    background: "#111",
+    boxShadow: "0 50px 120px rgba(0,0,0,0.6), 0 0 0 3px #333, inset 0 0 0 1px #555",
+    overflow: "hidden",
+    position: "relative",
+    flexShrink: 0,
+  }}>
+    {/* dynamic island */}
+    <div style={{
+      position: "absolute", top: 16, left: "50%", transform: "translateX(-50%)",
+      width: 120, height: 34, background: "#111",
+      borderRadius: 20, zIndex: 20,
+    }} />
+    <div style={{ width: "100%", height: "100%", borderRadius: 56, overflow: "hidden" }}>
       {children}
     </div>
   </div>
@@ -115,434 +84,572 @@ const Phone: React.FC<{ children: React.ReactNode; scale?: number }> = ({ childr
 
 // ── course card ───────────────────────────────────────────────────────────────
 
-const CourseCard: React.FC<{ title: string; level: string; progress: number; delay: number }> = ({
-  title,
-  level,
-  progress,
-  delay,
+const CourseCard: React.FC<{ title: string; subtitle: string; progress: number; emoji: string; delay: number }> = ({
+  title, subtitle, progress, emoji, delay,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const slideIn = spring({ frame: frame - delay, fps, config: { damping: 14, stiffness: 80 } });
-  const barWidth = spring({ frame: frame - delay - 10, fps, config: { damping: 16, stiffness: 50 } });
+  const slide = spring({ frame: frame - delay, fps, config: { damping: 15, stiffness: 75 } });
+  const bar = spring({ frame: frame - delay - 8, fps, config: { damping: 18, stiffness: 55 } });
 
   return (
-    <div
-      style={{
-        transform: `translateX(${interpolate(slideIn, [0, 1], [120, 0])}px)`,
-        background: WHITE,
-        borderRadius: 16,
-        padding: "14px 16px",
-        marginBottom: 10,
-        boxShadow: "0 4px 12px rgba(151,0,0,0.12)",
-        display: "flex",
-        flexDirection: "column",
-        gap: 8,
-      }}
-    >
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ fontSize: 13, fontWeight: 700, color: "#222" }}>{title}</span>
-        <span
-          style={{
-            fontSize: 10,
-            background: RED,
-            color: WHITE,
-            borderRadius: 20,
-            padding: "2px 8px",
-          }}
-        >
-          {level}
-        </span>
-      </div>
-      <div style={{ height: 6, background: "#f0e0e0", borderRadius: 3, overflow: "hidden" }}>
-        <div
-          style={{
+    <div style={{
+      transform: `translateX(${interpolate(slide, [0, 1], [140, 0])}px)`,
+      opacity: Math.min(slide * 2, 1),
+      background: WHITE,
+      borderRadius: 20,
+      padding: "18px 20px",
+      marginBottom: 14,
+      boxShadow: "0 6px 20px rgba(151,0,0,0.15)",
+      display: "flex",
+      alignItems: "center",
+      gap: 14,
+    }}>
+      <div style={{ fontSize: 32, flexShrink: 0 }}>{emoji}</div>
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
+          <span style={{ fontSize: 14, fontWeight: 800, color: "#1a1a1a" }}>{title}</span>
+          <span style={{ fontSize: 11, color: RED, fontWeight: 700 }}>{progress}%</span>
+        </div>
+        <div style={{ fontSize: 11, color: "#888", marginBottom: 8 }}>{subtitle}</div>
+        <div style={{ height: 6, background: "#f0e0e0", borderRadius: 3, overflow: "hidden" }}>
+          <div style={{
             height: "100%",
-            width: `${interpolate(barWidth, [0, 1], [0, progress])}%`,
-            background: `linear-gradient(90deg, ${RED}, #cc3333)`,
+            width: `${interpolate(bar, [0, 1], [0, progress])}%`,
+            background: `linear-gradient(90deg, ${RED}, ${RED2})`,
             borderRadius: 3,
-          }}
-        />
+          }} />
+        </div>
       </div>
-      <span style={{ fontSize: 10, color: "#888" }}>{progress}% abgeschlossen</span>
     </div>
   );
 };
 
-// ── Scene 1 – Problem / Hook ──────────────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════════════════════
+// SCENE 1 – HOOK
+// ══════════════════════════════════════════════════════════════════════════════
 
 const SceneHook: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const bgOpacity = interpolate(frame, [0, 20], [0, 1], { extrapolateRight: "clamp" });
-  const line1Y = useSlideUp(10);
-  const line1O = useFade(10);
-  const line2Y = useSlideUp(25);
-  const line2O = useFade(25);
-  const line3Y = useSlideUp(45);
-  const line3O = useFade(45);
-  const accentScale = spring({ frame: frame - 55, fps, config: { damping: 10, stiffness: 60 } });
+  const bgIn = interpolate(frame, [0, 25], [0, 1], { extrapolateRight: "clamp" });
+  const q1O = useFade(15);
+  const q1Y = useSlideUp(15);
+  const q2O = useFade(35);
+  const q2Y = useSlideUp(35);
+  const q3O = useFade(58);
+  const q3Y = useSlideUp(58);
+  const lineO = useFade(80);
+  const lineW = spring({ frame: frame - 80, fps, config: { damping: 18, stiffness: 60 } });
+  const accentO = interpolate(frame, [60, 90], [0, 0.12], { extrapolateRight: "clamp" });
 
   return (
-    <AbsoluteFill style={{ background: `linear-gradient(160deg, ${DARK_RED} 0%, ${RED} 60%, #c02020 100%)` }}>
-      <PatternBg opacity={0.06} />
-      <AbsoluteFill style={{ opacity: bgOpacity, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "0 80px" }}>
-        {/* question mark */}
-        <div style={{
-          fontSize: 120,
-          opacity: interpolate(accentScale, [0, 1], [0, 0.15]),
-          transform: `scale(${accentScale})`,
-          marginBottom: -30,
-          color: WHITE,
-          fontWeight: 900,
-        }}>
-          ؟
-        </div>
+    <AbsoluteFill style={{ background: `linear-gradient(175deg, ${DARK_RED} 0%, ${RED} 55%, ${RED2} 100%)`, opacity: bgIn }}>
+      <PatternBg opacity={0.07} />
 
-        <p style={{ opacity: line1O, transform: `translateY(${line1Y}px)`, fontSize: 52, fontWeight: 900, color: WHITE, textAlign: "center", margin: "0 0 16px", lineHeight: 1.2 }}>
-          Arabisch<br />lernen?
+      {/* big arabic question mark watermark */}
+      <div style={{
+        position: "absolute", right: -60, top: 200,
+        fontSize: 600, color: WHITE, opacity: accentO,
+        fontFamily: "serif", lineHeight: 1, userSelect: "none",
+        pointerEvents: "none",
+      }}>؟</div>
+
+      <AbsoluteFill style={{ display: "flex", flexDirection: "column", justifyContent: "center", padding: "0 90px", gap: 0 }}>
+        <p style={{ opacity: q1O, transform: `translateY(${q1Y}px)`, fontSize: 88, fontWeight: 900, color: WHITE, margin: "0 0 6px", lineHeight: 1.0, letterSpacing: -2 }}>
+          Du willst
         </p>
-        <p style={{ opacity: line2O, transform: `translateY(${line2Y}px)`, fontSize: 34, color: "rgba(255,255,255,0.85)", textAlign: "center", margin: "0 0 24px", fontWeight: 400 }}>
-          Zu kompliziert.<br />Kein System. Keine Struktur.
+        <p style={{ opacity: q2O, transform: `translateY(${q2Y}px)`, fontSize: 88, fontWeight: 900, color: WHITE, margin: "0 0 6px", lineHeight: 1.0, letterSpacing: -2 }}>
+          Arabisch
         </p>
+        <p style={{ opacity: q2O, transform: `translateY(${q2Y}px)`, fontSize: 88, fontWeight: 900, color: "rgba(255,255,255,0.45)", margin: "0 0 48px", lineHeight: 1.0, letterSpacing: -2 }}>
+          lernen?
+        </p>
+        <p style={{ opacity: q3O, transform: `translateY(${q3Y}px)`, fontSize: 42, color: "rgba(255,255,255,0.85)", margin: "0 0 48px", fontWeight: 400, lineHeight: 1.4 }}>
+          Aber es fühlt sich<br />zu kompliziert an.
+        </p>
+
         <div style={{
-          opacity: line3O,
-          transform: `translateY(${line3Y}px)`,
-          width: 80,
-          height: 4,
+          opacity: lineO,
+          width: interpolate(lineW, [0, 1], [0, 200]),
+          height: 5,
           background: WHITE,
-          borderRadius: 2,
-          marginTop: 8,
+          borderRadius: 3,
         }} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
 };
 
-// ── Scene 2 – Brand Reveal ────────────────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════════════════════
+// SCENE 2 – BRAND REVEAL  (clean, no overlap with hook)
+// ══════════════════════════════════════════════════════════════════════════════
 
 const SceneBrandReveal: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const logoScale = spring({ frame: frame - 10, fps, config: { damping: 12, stiffness: 50 } });
-  const logoO = useFade(10, 15);
-  const lineO = useFade(35, 20);
-  const lineScale = spring({ frame: frame - 35, fps, config: { damping: 14, stiffness: 70 } });
-  const taglineO = useFade(55, 20);
-  const taglineY = useSlideUp(55);
-  const subO = useFade(75, 20);
-  const subY = useSlideUp(75);
+  const bgIn = interpolate(frame, [0, 20], [0, 1], { extrapolateRight: "clamp" });
+
+  // logo burst in
+  const logoS = spring({ frame: frame - 5, fps, config: { damping: 10, stiffness: 55 } });
+  const logoO = useFade(5, 12);
+
+  // brand name slides in from left
+  const nameX = spring({ frame: frame - 30, fps, config: { damping: 16, stiffness: 70 } });
+  const nameO = useFade(30, 15);
+
+  // divider grows
+  const divW = spring({ frame: frame - 50, fps, config: { damping: 20, stiffness: 60 } });
+  const divO = useFade(50, 12);
+
+  // tagline
+  const tagO = useFade(65, 18);
+  const tagY = useSlideUp(65, 50);
+
+  // sub
+  const subO = useFade(82, 18);
+  const subY = useSlideUp(82, 50);
+
+  // bottom badge
+  const badgeO = useFade(98, 18);
+  const badgeS = spring({ frame: frame - 98, fps, config: { damping: 12, stiffness: 70 } });
 
   return (
-    <AbsoluteFill style={{ background: WHITE }}>
-      {/* red top half */}
-      <div style={{
-        position: "absolute", top: 0, left: 0, right: 0,
-        height: "52%",
-        background: `linear-gradient(160deg, ${DARK_RED}, ${RED})`,
-        borderRadius: "0 0 60px 60px",
-      }}>
-        <PatternBg opacity={0.08} />
-      </div>
+    <AbsoluteFill style={{
+      background: `linear-gradient(175deg, ${DARK_RED} 0%, ${RED} 50%, ${RED2} 100%)`,
+      opacity: bgIn,
+    }}>
+      <PatternBg opacity={0.07} />
 
-      <AbsoluteFill style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 0 }}>
-        {/* Logo circle */}
+      <AbsoluteFill style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 0, padding: "0 80px" }}>
+
+        {/* logo */}
         <div style={{
           opacity: logoO,
-          transform: `scale(${logoScale})`,
-          width: 160,
-          height: 160,
-          borderRadius: "50%",
-          background: WHITE,
-          boxShadow: "0 20px 60px rgba(151,0,0,0.3)",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          marginBottom: 32,
+          transform: `scale(${logoS})`,
+          marginBottom: 48,
+          filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.4))",
         }}>
-          <LogoMark size={120} color={RED} />
+          <div style={{
+            width: 200, height: 200, borderRadius: "50%",
+            background: WHITE,
+            display: "flex", alignItems: "center", justifyContent: "center",
+            boxShadow: "0 0 0 12px rgba(255,255,255,0.12)",
+          }}>
+            <LogoMark size={160} bgColor={RED} letterColor={WHITE} />
+          </div>
         </div>
 
-        {/* Brand name */}
+        {/* brand name */}
         <div style={{
-          opacity: lineO,
-          transform: `scale(${lineScale})`,
-          fontSize: 64,
+          opacity: nameO,
+          transform: `translateX(${interpolate(nameX, [0, 1], [-80, 0])}px)`,
+          fontSize: 76,
           fontWeight: 900,
-          color: RED,
-          letterSpacing: -1,
-          marginBottom: 4,
+          color: WHITE,
+          letterSpacing: 4,
+          marginBottom: 12,
+          textAlign: "center",
         }}>
           ARABICROOTS
         </div>
 
         {/* divider */}
         <div style={{
-          opacity: lineO,
-          width: interpolate(lineScale, [0, 1], [0, 200]),
-          height: 3,
-          background: RED,
+          opacity: divO,
+          width: interpolate(divW, [0, 1], [0, 300]),
+          height: 4,
+          background: "rgba(255,255,255,0.5)",
           borderRadius: 2,
-          margin: "16px 0",
+          margin: "8px 0 32px",
         }} />
 
         {/* tagline */}
         <p style={{
-          opacity: taglineO,
-          transform: `translateY(${taglineY}px)`,
-          fontSize: 36,
-          color: "#444",
+          opacity: tagO,
+          transform: `translateY(${tagY}px)`,
+          fontSize: 46,
+          color: WHITE,
+          fontWeight: 300,
           textAlign: "center",
           margin: "0 0 8px",
-          fontWeight: 600,
+          letterSpacing: 1,
         }}>
           Arabisch lernen
         </p>
         <p style={{
           opacity: subO,
           transform: `translateY(${subY}px)`,
-          fontSize: 36,
-          color: RED,
+          fontSize: 52,
+          color: WHITE,
           fontWeight: 800,
-          margin: 0,
+          textAlign: "center",
+          margin: "0 0 64px",
         }}>
           leicht gemacht.
         </p>
+
+        {/* badge */}
+        <div style={{
+          opacity: badgeO,
+          transform: `scale(${badgeS})`,
+          background: "rgba(255,255,255,0.15)",
+          border: "2px solid rgba(255,255,255,0.35)",
+          borderRadius: 60,
+          padding: "16px 48px",
+          fontSize: 28,
+          color: WHITE,
+          fontWeight: 600,
+          letterSpacing: 1,
+        }}>
+          arabicroots.de
+        </div>
       </AbsoluteFill>
     </AbsoluteFill>
   );
 };
 
-// ── Scene 3 – Kurse Overview ──────────────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════════════════════
+// SCENE 3 – KURSE  (full screen, big phone)
+// ══════════════════════════════════════════════════════════════════════════════
 
 const SceneCourses: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const titleO = useFade(5, 20);
-  const titleY = useSlideUp(5);
-  const phoneScale = spring({ frame: frame - 15, fps, config: { damping: 14, stiffness: 55 } });
+  const bgIn = interpolate(frame, [0, 20], [0, 1], { extrapolateRight: "clamp" });
+  const titleO = useFade(8, 18);
+  const titleY = useSlideUp(8);
+  const phoneY = spring({ frame: frame - 12, fps, config: { damping: 16, stiffness: 55 } });
 
   return (
-    <AbsoluteFill style={{ background: CREAM }}>
-      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 360, background: `linear-gradient(160deg, ${DARK_RED}, ${RED})`, borderRadius: "0 0 50px 50px" }}>
-        <PatternBg opacity={0.07} />
+    <AbsoluteFill style={{ background: `linear-gradient(175deg, ${DARK_RED} 0%, ${RED} 40%, #b01515 100%)`, opacity: bgIn }}>
+      <PatternBg opacity={0.05} />
+
+      {/* top label + title */}
+      <div style={{
+        position: "absolute", top: 100, left: 0, right: 0,
+        display: "flex", flexDirection: "column", alignItems: "center",
+        opacity: titleO, transform: `translateY(${titleY}px)`,
+        zIndex: 10,
+      }}>
+        <div style={{
+          background: "rgba(255,255,255,0.18)", border: "1.5px solid rgba(255,255,255,0.4)",
+          borderRadius: 40, padding: "8px 28px", fontSize: 22, color: WHITE,
+          letterSpacing: 4, fontWeight: 600, textTransform: "uppercase", marginBottom: 20,
+        }}>
+          Feature 01
+        </div>
+        <p style={{ fontSize: 72, fontWeight: 900, color: WHITE, margin: 0, letterSpacing: -1, textAlign: "center" }}>
+          Deine Kurse
+        </p>
       </div>
 
-      <AbsoluteFill style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "60px 40px 0" }}>
-        <div style={{ opacity: titleO, transform: `translateY(${titleY}px)`, textAlign: "center", marginBottom: 40, zIndex: 1 }}>
-          <p style={{ fontSize: 20, color: "rgba(255,255,255,0.8)", margin: "0 0 6px", letterSpacing: 3, textTransform: "uppercase" }}>Feature 1</p>
-          <p style={{ fontSize: 52, fontWeight: 900, color: WHITE, margin: 0 }}>Strukturierte Kurse</p>
-        </div>
+      {/* phone centered */}
+      <div style={{
+        position: "absolute",
+        bottom: -40,
+        left: "50%",
+        transform: `translateX(-50%) translateY(${interpolate(phoneY, [0, 1], [300, 0])}px)`,
+        zIndex: 5,
+        filter: "drop-shadow(0 -20px 60px rgba(0,0,0,0.5))",
+      }}>
+        <Phone>
+          <div style={{
+            background: `linear-gradient(180deg, ${RED} 0%, #a01010 28%, #f5eded 28%)`,
+            height: "100%",
+            padding: "60px 24px 24px",
+          }}>
+            {/* app header */}
+            <p style={{ color: WHITE, fontSize: 15, fontWeight: 700, letterSpacing: 3, margin: "0 0 4px", textTransform: "uppercase" }}>ArabicRoots</p>
+            <p style={{ color: WHITE, fontSize: 26, fontWeight: 900, margin: "0 0 28px" }}>Meine Kurse</p>
 
-        <div style={{ transform: `scale(${phoneScale})`, zIndex: 2 }}>
-          <Phone>
-            <div style={{ background: `linear-gradient(180deg, ${RED} 0%, #c02020 30%, CREAM 30%)`, height: "100%", padding: "40px 16px 16px" }}>
-              <p style={{ color: WHITE, fontSize: 11, fontWeight: 700, letterSpacing: 2, margin: "0 0 6px" }}>ARABICROOTS</p>
-              <p style={{ color: WHITE, fontSize: 18, fontWeight: 800, margin: "0 0 20px" }}>Meine Kurse</p>
-              <CourseCard title="Arabisch Grundkurs" level="Anfänger" progress={75} delay={20} />
-              <CourseCard title="Arabische Schrift" level="Grundlagen" progress={45} delay={30} />
-              <CourseCard title="Alltags-Arabisch" level="Mittelstufe" progress={20} delay={40} />
-            </div>
-          </Phone>
-        </div>
-      </AbsoluteFill>
+            <CourseCard title="Arabisch Grundkurs" subtitle="Anfänger · 12 Lektionen" progress={75} emoji="📖" delay={18} />
+            <CourseCard title="Arabische Schrift" subtitle="Grundlagen · 8 Lektionen" progress={45} emoji="✍️" delay={28} />
+            <CourseCard title="Alltags-Arabisch" subtitle="Mittelstufe · 15 Lektionen" progress={22} emoji="🗣️" delay={38} />
+          </div>
+        </Phone>
+      </div>
     </AbsoluteFill>
   );
 };
 
-// ── Scene 4 – Vocabulary / Lernen ────────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════════════════════
+// SCENE 4 – VOKABELN
+// ══════════════════════════════════════════════════════════════════════════════
 
-const FlashCard: React.FC<{ arabic: string; german: string; delay: number; flipped?: boolean }> = ({ arabic, german, delay, flipped = false }) => {
+const FlashCard: React.FC<{ arabic: string; transliteration: string; german: string; delay: number; accent?: boolean }> = ({
+  arabic, transliteration, german, delay, accent = false,
+}) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const appear = spring({ frame: frame - delay, fps, config: { damping: 14, stiffness: 70 } });
+  const s = spring({ frame: frame - delay, fps, config: { damping: 14, stiffness: 65 } });
 
   return (
     <div style={{
-      transform: `translateY(${interpolate(appear, [0, 1], [80, 0])}px)`,
-      opacity: appear,
-      background: flipped ? RED : WHITE,
-      borderRadius: 20,
-      padding: "20px 24px",
-      marginBottom: 12,
-      boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+      transform: `translateY(${interpolate(s, [0, 1], [100, 0])}px)`,
+      opacity: Math.min(s * 1.5, 1),
+      background: accent ? `linear-gradient(135deg, ${RED}, ${RED2})` : WHITE,
+      borderRadius: 24,
+      padding: "22px 28px",
+      marginBottom: 16,
+      boxShadow: accent ? "0 12px 32px rgba(151,0,0,0.4)" : "0 8px 24px rgba(0,0,0,0.1)",
       display: "flex",
-      flexDirection: "column",
       alignItems: "center",
+      justifyContent: "space-between",
     }}>
-      <span style={{ fontSize: 32, color: flipped ? WHITE : RED, fontWeight: 900, marginBottom: 4, direction: "rtl" }}>{arabic}</span>
-      <span style={{ fontSize: 14, color: flipped ? "rgba(255,255,255,0.9)" : "#555", fontWeight: 500 }}>{german}</span>
+      <div>
+        <div style={{ fontSize: 14, color: accent ? "rgba(255,255,255,0.7)" : "#999", marginBottom: 4 }}>{transliteration}</div>
+        <div style={{ fontSize: 22, fontWeight: 700, color: accent ? WHITE : "#1a1a1a" }}>{german}</div>
+      </div>
+      <div style={{ fontSize: 42, color: accent ? WHITE : RED, fontWeight: 900, direction: "rtl" }}>{arabic}</div>
     </div>
   );
 };
 
 const SceneVocab: React.FC = () => {
   const frame = useCurrentFrame();
-
-  const titleO = useFade(5, 20);
-  const titleY = useSlideUp(5);
   const { fps } = useVideoConfig();
-  const phoneScale = spring({ frame: frame - 15, fps, config: { damping: 14, stiffness: 55 } });
+
+  const bgIn = interpolate(frame, [0, 20], [0, 1], { extrapolateRight: "clamp" });
+  const titleO = useFade(8, 18);
+  const titleY = useSlideUp(8);
+  const phoneY = spring({ frame: frame - 12, fps, config: { damping: 16, stiffness: 55 } });
 
   return (
-    <AbsoluteFill style={{ background: CREAM }}>
-      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 360, background: `linear-gradient(160deg, ${RED}, #cc2222)`, borderRadius: "0 0 50px 50px" }}>
-        <PatternBg opacity={0.07} />
+    <AbsoluteFill style={{ background: `linear-gradient(175deg, ${DARK_RED} 0%, #8a0000 40%, ${RED} 100%)`, opacity: bgIn }}>
+      <PatternBg opacity={0.05} />
+
+      <div style={{
+        position: "absolute", top: 100, left: 0, right: 0,
+        display: "flex", flexDirection: "column", alignItems: "center",
+        opacity: titleO, transform: `translateY(${titleY}px)`,
+        zIndex: 10,
+      }}>
+        <div style={{
+          background: "rgba(255,255,255,0.18)", border: "1.5px solid rgba(255,255,255,0.4)",
+          borderRadius: 40, padding: "8px 28px", fontSize: 22, color: WHITE,
+          letterSpacing: 4, fontWeight: 600, textTransform: "uppercase", marginBottom: 20,
+        }}>
+          Feature 02
+        </div>
+        <p style={{ fontSize: 72, fontWeight: 900, color: WHITE, margin: 0, letterSpacing: -1 }}>
+          Vokabeln
+        </p>
       </div>
 
-      <AbsoluteFill style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "60px 40px 0" }}>
-        <div style={{ opacity: titleO, transform: `translateY(${titleY}px)`, textAlign: "center", marginBottom: 40, zIndex: 1 }}>
-          <p style={{ fontSize: 20, color: "rgba(255,255,255,0.8)", margin: "0 0 6px", letterSpacing: 3, textTransform: "uppercase" }}>Feature 2</p>
-          <p style={{ fontSize: 52, fontWeight: 900, color: WHITE, margin: 0 }}>Vokabeln lernen</p>
-        </div>
-
-        <div style={{ transform: `scale(${phoneScale})`, zIndex: 2 }}>
-          <Phone>
-            <div style={{ background: "#f8f0f0", height: "100%", padding: "40px 16px 16px" }}>
-              <p style={{ color: RED, fontSize: 13, fontWeight: 800, letterSpacing: 1, margin: "0 0 16px", textAlign: "center" }}>Lektion 3 – Familie</p>
-              <FlashCard arabic="أسرة" german="Familie" delay={20} />
-              <FlashCard arabic="أب" german="Vater" delay={35} flipped />
-              <FlashCard arabic="أم" german="Mutter" delay={50} />
-            </div>
-          </Phone>
-        </div>
-      </AbsoluteFill>
+      <div style={{
+        position: "absolute",
+        bottom: -40,
+        left: "50%",
+        transform: `translateX(-50%) translateY(${interpolate(phoneY, [0, 1], [300, 0])}px)`,
+        zIndex: 5,
+        filter: "drop-shadow(0 -20px 60px rgba(0,0,0,0.5))",
+      }}>
+        <Phone>
+          <div style={{ background: "#f9f0f0", height: "100%", padding: "64px 24px 24px" }}>
+            <p style={{ color: RED, fontSize: 15, fontWeight: 800, letterSpacing: 2, margin: "0 0 6px", textTransform: "uppercase" }}>Lektion 4</p>
+            <p style={{ color: "#1a1a1a", fontSize: 28, fontWeight: 900, margin: "0 0 30px" }}>Familie & Zuhause</p>
+            <FlashCard arabic="أسرة" transliteration="usra" german="Familie" delay={18} accent />
+            <FlashCard arabic="أب" transliteration="ab" german="Vater" delay={30} />
+            <FlashCard arabic="أم" transliteration="umm" german="Mutter" delay={42} accent />
+            <FlashCard arabic="بيت" transliteration="bayt" german="Haus" delay={54} />
+          </div>
+        </Phone>
+      </div>
     </AbsoluteFill>
   );
 };
 
-// ── Scene 5 – Progress / Fortschritt ─────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════════════════════
+// SCENE 5 – FORTSCHRITT
+// ══════════════════════════════════════════════════════════════════════════════
 
 const SceneProgress: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const titleO = useFade(5, 20);
-  const titleY = useSlideUp(5);
-  const phoneScale = spring({ frame: frame - 15, fps, config: { damping: 14, stiffness: 55 } });
-  const circleProgress = spring({ frame: frame - 25, fps, config: { damping: 16, stiffness: 40 } });
+  const bgIn = interpolate(frame, [0, 20], [0, 1], { extrapolateRight: "clamp" });
+  const titleO = useFade(8, 18);
+  const titleY = useSlideUp(8);
+  const phoneY = spring({ frame: frame - 12, fps, config: { damping: 16, stiffness: 55 } });
+  const circP = spring({ frame: frame - 30, fps, config: { damping: 18, stiffness: 40 } });
 
-  const radius = 60;
-  const circumference = 2 * Math.PI * radius;
-  const dashOffset = circumference * (1 - interpolate(circleProgress, [0, 1], [0, 0.72]));
+  const R = 88;
+  const C = 2 * Math.PI * R;
+  const offset = C * (1 - interpolate(circP, [0, 1], [0, 0.78]));
+
+  const days = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+  const heights = [55, 40, 65, 50, 42, 20, 8];
 
   return (
-    <AbsoluteFill style={{ background: CREAM }}>
-      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 360, background: `linear-gradient(160deg, ${DARK_RED}, ${RED})`, borderRadius: "0 0 50px 50px" }}>
-        <PatternBg opacity={0.07} />
+    <AbsoluteFill style={{ background: `linear-gradient(175deg, ${DARK_RED} 0%, ${RED} 50%, #b01515 100%)`, opacity: bgIn }}>
+      <PatternBg opacity={0.05} />
+
+      <div style={{
+        position: "absolute", top: 100, left: 0, right: 0,
+        display: "flex", flexDirection: "column", alignItems: "center",
+        opacity: titleO, transform: `translateY(${titleY}px)`,
+        zIndex: 10,
+      }}>
+        <div style={{
+          background: "rgba(255,255,255,0.18)", border: "1.5px solid rgba(255,255,255,0.4)",
+          borderRadius: 40, padding: "8px 28px", fontSize: 22, color: WHITE,
+          letterSpacing: 4, fontWeight: 600, textTransform: "uppercase", marginBottom: 20,
+        }}>
+          Feature 03
+        </div>
+        <p style={{ fontSize: 72, fontWeight: 900, color: WHITE, margin: 0, letterSpacing: -1 }}>
+          Fortschritt
+        </p>
       </div>
 
-      <AbsoluteFill style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "60px 40px 0" }}>
-        <div style={{ opacity: titleO, transform: `translateY(${titleY}px)`, textAlign: "center", marginBottom: 40, zIndex: 1 }}>
-          <p style={{ fontSize: 20, color: "rgba(255,255,255,0.8)", margin: "0 0 6px", letterSpacing: 3, textTransform: "uppercase" }}>Feature 3</p>
-          <p style={{ fontSize: 52, fontWeight: 900, color: WHITE, margin: 0 }}>Dein Fortschritt</p>
-        </div>
+      <div style={{
+        position: "absolute",
+        bottom: -40,
+        left: "50%",
+        transform: `translateX(-50%) translateY(${interpolate(phoneY, [0, 1], [300, 0])}px)`,
+        zIndex: 5,
+        filter: "drop-shadow(0 -20px 60px rgba(0,0,0,0.5))",
+      }}>
+        <Phone>
+          <div style={{
+            background: WHITE,
+            height: "100%",
+            padding: "60px 28px 28px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}>
+            <p style={{ color: "#1a1a1a", fontSize: 26, fontWeight: 900, margin: "0 0 28px", alignSelf: "flex-start" }}>
+              Diese Woche
+            </p>
 
-        <div style={{ transform: `scale(${phoneScale})`, zIndex: 2 }}>
-          <Phone>
-            <div style={{ background: WHITE, height: "100%", padding: "40px 16px 16px", display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <p style={{ color: RED, fontSize: 13, fontWeight: 800, margin: "0 0 20px" }}>Wochenübersicht</p>
+            {/* ring */}
+            <svg width={200} height={200} style={{ marginBottom: 24 }}>
+              <circle cx={100} cy={100} r={R} fill="none" stroke="#f0e0e0" strokeWidth={16} />
+              <circle cx={100} cy={100} r={R} fill="none" stroke={`url(#ring-grad)`}
+                strokeWidth={16} strokeDasharray={C} strokeDashoffset={offset}
+                strokeLinecap="round" transform="rotate(-90 100 100)" />
+              <defs>
+                <linearGradient id="ring-grad" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stopColor={DARK_RED} />
+                  <stop offset="100%" stopColor={RED2} />
+                </linearGradient>
+              </defs>
+              <text x={100} y={92} textAnchor="middle" fontSize={38} fontWeight={900} fill={RED}>78%</text>
+              <text x={100} y={118} textAnchor="middle" fontSize={14} fill="#aaa">Wochenziel</text>
+            </svg>
 
-              {/* circular progress */}
-              <svg width={150} height={150} style={{ marginBottom: 12 }}>
-                <circle cx={75} cy={75} r={radius} fill="none" stroke="#f0e0e0" strokeWidth={12} />
-                <circle
-                  cx={75} cy={75} r={radius}
-                  fill="none"
-                  stroke={RED}
-                  strokeWidth={12}
-                  strokeDasharray={circumference}
-                  strokeDashoffset={dashOffset}
-                  strokeLinecap="round"
-                  transform="rotate(-90 75 75)"
-                />
-                <text x={75} y={70} textAnchor="middle" fontSize={28} fontWeight={900} fill={RED}>72%</text>
-                <text x={75} y={90} textAnchor="middle" fontSize={11} fill="#888">Wochenziel</text>
-              </svg>
-
-              {/* streak bars */}
-              <div style={{ display: "flex", gap: 8, marginTop: 8 }}>
-                {["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"].map((day, i) => {
-                  const barH = spring({ frame: frame - 30 - i * 5, fps, config: { damping: 14, stiffness: 60 } });
-                  return (
-                    <div key={day} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
-                      <div style={{
-                        width: 24,
-                        height: interpolate(barH, [0, 1], [0, [50, 40, 60, 55, 35, 45, 20][i]]),
-                        background: i < 5 ? RED : "#f0e0e0",
-                        borderRadius: 4,
-                      }} />
-                      <span style={{ fontSize: 9, color: "#aaa" }}>{day}</span>
-                    </div>
-                  );
-                })}
-              </div>
+            {/* streak bars */}
+            <div style={{ display: "flex", gap: 10, alignItems: "flex-end", width: "100%" }}>
+              {days.map((day, i) => {
+                const bH = spring({ frame: frame - 35 - i * 6, fps, config: { damping: 14, stiffness: 55 } });
+                return (
+                  <div key={day} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+                    <div style={{
+                      width: "100%",
+                      height: interpolate(bH, [0, 1], [0, heights[i]]),
+                      background: i < 5 ? `linear-gradient(180deg, ${RED}, ${RED2})` : "#f0e0e0",
+                      borderRadius: 6,
+                    }} />
+                    <span style={{ fontSize: 11, color: i < 5 ? RED : "#ccc", fontWeight: i < 5 ? 700 : 400 }}>{day}</span>
+                  </div>
+                );
+              })}
             </div>
-          </Phone>
-        </div>
-      </AbsoluteFill>
+
+            {/* stats row */}
+            <div style={{ display: "flex", gap: 16, marginTop: 24, width: "100%" }}>
+              {[["🔥", "12", "Streak"], ["⭐", "240", "Punkte"], ["📚", "3", "Kurse"]].map(([icon, val, label]) => (
+                <div key={label} style={{
+                  flex: 1, background: "#fdf5f5", borderRadius: 16, padding: "14px 0",
+                  display: "flex", flexDirection: "column", alignItems: "center", gap: 2,
+                }}>
+                  <span style={{ fontSize: 22 }}>{icon}</span>
+                  <span style={{ fontSize: 18, fontWeight: 900, color: RED }}>{val}</span>
+                  <span style={{ fontSize: 11, color: "#aaa" }}>{label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Phone>
+      </div>
     </AbsoluteFill>
   );
 };
 
-// ── Scene 6 – CTA ─────────────────────────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════════════════════
+// SCENE 6 – CTA
+// ══════════════════════════════════════════════════════════════════════════════
 
 const SceneCTA: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const bgO = useFade(0, 15);
-  const logoScale = spring({ frame: frame - 10, fps, config: { damping: 12, stiffness: 60 } });
-  const logoO = useFade(10, 20);
-  const textO = useFade(30, 20);
-  const textY = useSlideUp(30);
-  const btnScale = spring({ frame: frame - 55, fps, config: { damping: 10, stiffness: 80 } });
-  const btnO = useFade(55, 20);
-  const subO = useFade(75, 20);
+  const bgIn = interpolate(frame, [0, 20], [0, 1], { extrapolateRight: "clamp" });
+  const logoS = spring({ frame: frame - 8, fps, config: { damping: 11, stiffness: 55 } });
+  const logoO = useFade(8, 15);
+  const t1O = useFade(30, 18);
+  const t1Y = useSlideUp(30);
+  const t2O = useFade(50, 18);
+  const t2Y = useSlideUp(50);
+  const btnS = spring({ frame: frame - 70, fps, config: { damping: 10, stiffness: 75 } });
+  const btnO = useFade(70, 18);
+  const urlO = useFade(92, 18);
 
   return (
-    <AbsoluteFill style={{ background: `linear-gradient(160deg, ${DARK_RED} 0%, ${RED} 50%, #c02020 100%)`, opacity: bgO }}>
-      <PatternBg opacity={0.08} />
+    <AbsoluteFill style={{ background: `linear-gradient(175deg, ${DARK_RED} 0%, ${RED} 50%, ${RED2} 100%)`, opacity: bgIn }}>
+      <PatternBg opacity={0.07} />
 
-      <AbsoluteFill style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 0, padding: "0 60px" }}>
-        <div style={{ opacity: logoO, transform: `scale(${logoScale})`, marginBottom: 32 }}>
+      {/* glow circle behind logo */}
+      <div style={{
+        position: "absolute", top: "50%", left: "50%",
+        transform: "translate(-50%, -100%)",
+        width: 500, height: 500,
+        borderRadius: "50%",
+        background: "radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%)",
+      }} />
+
+      <AbsoluteFill style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "0 80px", gap: 0 }}>
+
+        <div style={{ opacity: logoO, transform: `scale(${logoS})`, marginBottom: 52, filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.35))" }}>
           <div style={{
-            width: 120, height: 120, borderRadius: "50%",
+            width: 180, height: 180, borderRadius: "50%",
             background: WHITE,
             display: "flex", alignItems: "center", justifyContent: "center",
-            boxShadow: "0 20px 50px rgba(0,0,0,0.3)",
+            boxShadow: "0 0 0 16px rgba(255,255,255,0.1), 0 0 0 32px rgba(255,255,255,0.05)",
           }}>
-            <LogoMark size={90} color={RED} />
+            <LogoMark size={140} bgColor={RED} letterColor={WHITE} />
           </div>
         </div>
 
-        <p style={{ opacity: textO, transform: `translateY(${textY}px)`, fontSize: 56, fontWeight: 900, color: WHITE, textAlign: "center", margin: "0 0 12px", lineHeight: 1.1 }}>
-          Starte noch<br />heute!
+        <p style={{ opacity: t1O, transform: `translateY(${t1Y}px)`, fontSize: 82, fontWeight: 900, color: WHITE, textAlign: "center", margin: "0 0 10px", lineHeight: 1.0, letterSpacing: -2 }}>
+          Starte jetzt
         </p>
-        <p style={{ opacity: textO, transform: `translateY(${textY}px)`, fontSize: 28, color: "rgba(255,255,255,0.85)", textAlign: "center", margin: "0 0 48px", fontWeight: 400 }}>
-          Arabisch lernen leicht gemacht.
+        <p style={{ opacity: t2O, transform: `translateY(${t2Y}px)`, fontSize: 82, fontWeight: 900, color: "rgba(255,255,255,0.45)", textAlign: "center", margin: "0 0 64px", lineHeight: 1.0, letterSpacing: -2 }}>
+          kostenlos.
         </p>
 
         <div style={{
           opacity: btnO,
-          transform: `scale(${btnScale})`,
+          transform: `scale(${btnS})`,
           background: WHITE,
           color: RED,
-          fontSize: 28,
+          fontSize: 34,
           fontWeight: 900,
-          padding: "22px 64px",
-          borderRadius: 60,
-          boxShadow: "0 16px 40px rgba(0,0,0,0.25)",
-          marginBottom: 32,
+          padding: "28px 80px",
+          borderRadius: 80,
+          boxShadow: "0 20px 50px rgba(0,0,0,0.3)",
+          marginBottom: 40,
           letterSpacing: 0.5,
         }}>
           Jetzt starten →
         </div>
 
-        <p style={{ opacity: subO, fontSize: 22, color: "rgba(255,255,255,0.7)", textAlign: "center", margin: 0 }}>
+        <p style={{ opacity: urlO, fontSize: 26, color: "rgba(255,255,255,0.6)", margin: 0, letterSpacing: 2 }}>
           arabicroots.de
         </p>
       </AbsoluteFill>
@@ -550,52 +657,42 @@ const SceneCTA: React.FC = () => {
   );
 };
 
-// ── Crossfade transition wrapper ─────────────────────────────────────────────
+// ── Transition – hard cut with fade-in only ───────────────────────────────────
 
-const Crossfade: React.FC<{ children: React.ReactNode; startFrame: number; endFrame: number; fadeDuration?: number }> = ({
-  children, startFrame, endFrame, fadeDuration = 15,
-}) => {
+const FadeScene: React.FC<{ children: React.ReactNode; fadeDuration?: number }> = ({ children, fadeDuration = 18 }) => {
   const frame = useCurrentFrame();
-  const fadeIn = interpolate(frame, [startFrame, startFrame + fadeDuration], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const fadeOut = interpolate(frame, [endFrame - fadeDuration, endFrame], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const opacity = Math.min(fadeIn, fadeOut);
-
-  if (frame < startFrame || frame > endFrame) return null;
+  const opacity = interpolate(frame, [0, fadeDuration], [0, 1], { extrapolateRight: "clamp" });
   return <div style={{ position: "absolute", inset: 0, opacity }}>{children}</div>;
 };
 
 // ── Main composition ──────────────────────────────────────────────────────────
+// 20s @ 30fps = 600 frames
+// Scene 1 Hook:         0  – 110  (110 frames = 3.7s)
+// Scene 2 Brand Reveal: 110 – 230 (120 frames = 4s)
+// Scene 3 Courses:      230 – 365 (135 frames = 4.5s)
+// Scene 4 Vocab:        365 – 490 (125 frames = 4.2s)
+// Scene 5 Progress:     490 – 560 (70 frames  = 2.3s)
+// Scene 6 CTA:          560 – 600 (40 frames  = 1.3s) ← punchy ending
 
-export const ArabicRootsVideo: React.FC = () => {
-  // 20s @ 30fps = 600 frames
-  // Scene timings:
-  // 0-120   Scene 1 – Hook       (4s)
-  // 100-210 Scene 2 – Brand      (3.7s, overlaps for crossfade)
-  // 195-315 Scene 3 – Courses    (4s)
-  // 300-420 Scene 4 – Vocab      (4s)
-  // 405-510 Scene 5 – Progress   (3.5s)
-  // 495-600 Scene 6 – CTA        (3.5s)
-
-  return (
-    <AbsoluteFill style={{ background: "#000", fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif" }}>
-      <Crossfade startFrame={0} endFrame={125}>
-        <Sequence from={0}><SceneHook /></Sequence>
-      </Crossfade>
-      <Crossfade startFrame={105} endFrame={220}>
-        <Sequence from={105}><SceneBrandReveal /></Sequence>
-      </Crossfade>
-      <Crossfade startFrame={205} endFrame={325}>
-        <Sequence from={205}><SceneCourses /></Sequence>
-      </Crossfade>
-      <Crossfade startFrame={310} endFrame={430}>
-        <Sequence from={310}><SceneVocab /></Sequence>
-      </Crossfade>
-      <Crossfade startFrame={415} endFrame={520}>
-        <Sequence from={415}><SceneProgress /></Sequence>
-      </Crossfade>
-      <Crossfade startFrame={505} endFrame={600}>
-        <Sequence from={505}><SceneCTA /></Sequence>
-      </Crossfade>
-    </AbsoluteFill>
-  );
-};
+export const ArabicRootsVideo: React.FC = () => (
+  <AbsoluteFill style={{ background: DARK_RED, fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif" }}>
+    <Sequence from={0} durationInFrames={110}>
+      <FadeScene><SceneHook /></FadeScene>
+    </Sequence>
+    <Sequence from={110} durationInFrames={120}>
+      <FadeScene><SceneBrandReveal /></FadeScene>
+    </Sequence>
+    <Sequence from={230} durationInFrames={135}>
+      <FadeScene><SceneCourses /></FadeScene>
+    </Sequence>
+    <Sequence from={365} durationInFrames={125}>
+      <FadeScene><SceneVocab /></FadeScene>
+    </Sequence>
+    <Sequence from={490} durationInFrames={70}>
+      <FadeScene><SceneProgress /></FadeScene>
+    </Sequence>
+    <Sequence from={560} durationInFrames={40}>
+      <FadeScene fadeDuration={10}><SceneCTA /></FadeScene>
+    </Sequence>
+  </AbsoluteFill>
+);
