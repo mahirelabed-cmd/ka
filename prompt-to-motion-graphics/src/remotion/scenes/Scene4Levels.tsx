@@ -6,11 +6,9 @@ import {
   spring,
   interpolate,
 } from "remotion";
-import { loadFont } from "@remotion/google-fonts/DMSans";
 import { theme } from "../theme";
 import { LevelCard } from "../components/LevelCard";
-
-const { fontFamily } = loadFont();
+import { DM_SANS } from "../components/FontLoader";
 
 const LEVELS = [
   { level: 1, title: "Buchstabenkurs" },
@@ -21,7 +19,6 @@ const LEVELS = [
   { level: 6, title: "Meisterstufe" },
 ];
 
-// Card width + gap
 const CARD_WIDTH = 300;
 const CARD_GAP = 24;
 const CARD_STRIDE = CARD_WIDTH + CARD_GAP;
@@ -38,15 +35,12 @@ export const Scene4Levels: React.FC = () => {
     to: 1,
   });
 
-  // Scroll: cards move from right to left starting at frame 20
-  // Total scroll distance: enough to show all 6 cards
   const maxScroll = CARD_STRIDE * (LEVELS.length - 1);
   const scrollX = interpolate(frame, [20, 170], [0, -maxScroll], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  // Active card index based on scroll
   const activeIndex = Math.round(
     interpolate(frame, [20, 170], [0, LEVELS.length - 1], {
       extrapolateLeft: "clamp",
@@ -65,7 +59,6 @@ export const Scene4Levels: React.FC = () => {
           gap: 56,
         }}
       >
-        {/* Headline */}
         <div
           style={{
             opacity: headlineSp,
@@ -77,7 +70,7 @@ export const Scene4Levels: React.FC = () => {
               fontSize: 100,
               fontWeight: 900,
               color: theme.red,
-              fontFamily,
+              fontFamily: DM_SANS,
               letterSpacing: -3,
               lineHeight: 1,
             }}
@@ -89,7 +82,7 @@ export const Scene4Levels: React.FC = () => {
               fontSize: 44,
               fontWeight: 600,
               color: theme.red,
-              fontFamily,
+              fontFamily: DM_SANS,
               marginTop: 12,
             }}
           >
@@ -97,7 +90,6 @@ export const Scene4Levels: React.FC = () => {
           </div>
         </div>
 
-        {/* Scrolling cards */}
         <div style={{ overflow: "hidden", width: "100%" }}>
           <div
             style={{

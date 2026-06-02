@@ -1,8 +1,6 @@
 import React from "react";
-import { loadFont } from "@remotion/google-fonts/DMSans";
 import { theme } from "../theme";
-
-const { fontFamily } = loadFont();
+import { DM_SANS } from "./FontLoader";
 
 interface LevelCardProps {
   level: number;
@@ -37,7 +35,7 @@ export const LevelCard: React.FC<LevelCardProps> = ({
         color: theme.red,
         letterSpacing: 3,
         textTransform: "uppercase",
-        fontFamily,
+        fontFamily: DM_SANS,
       }}
     >
       LEVEL {level}
@@ -47,7 +45,7 @@ export const LevelCard: React.FC<LevelCardProps> = ({
         fontSize: 30,
         fontWeight: 800,
         color: theme.red,
-        fontFamily,
+        fontFamily: DM_SANS,
         letterSpacing: -0.5,
         lineHeight: 1.2,
       }}

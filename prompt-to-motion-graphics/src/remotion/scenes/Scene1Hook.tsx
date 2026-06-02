@@ -6,14 +6,9 @@ import {
   spring,
   interpolate,
 } from "remotion";
-import { loadFont as loadPlayfair } from "@remotion/google-fonts/PlayfairDisplay";
-import { loadFont as loadDMSans } from "@remotion/google-fonts/DMSans";
 import { theme } from "../theme";
+import { PLAYFAIR, DM_SANS } from "../components/FontLoader";
 
-const { fontFamily: playfairFamily } = loadPlayfair();
-const { fontFamily: dmSansFamily } = loadDMSans();
-
-// Arabic letters with start/end positions (relative to center of viewport)
 const LETTER_DEFS = [
   { char: "ع", startX: -900, startY: -1200, endX: -220, endY: -280, startRot: -45, endRot: -15, delay: 0 },
   { char: "ر", startX: 950, startY: -900, endX: 240, endY: -350, startRot: 40, endRot: 18, delay: 8 },
@@ -26,13 +21,11 @@ export const Scene1Hook: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Letters: fly in 0-50, hold 50-70, fade out 70-100
   const lettersGlobalOpacity = interpolate(frame, [70, 100], [1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  // Word 1 "Arabisch": scale-in from frame 85
   const word1Scale = spring({
     frame: frame - 85,
     fps,
@@ -47,8 +40,6 @@ export const Scene1Hook: React.FC = () => {
     from: 0,
     to: 1,
   });
-
-  // Word 2 "lernen.": scale-in from frame 108
   const word2Scale = spring({
     frame: frame - 108,
     fps,
@@ -108,7 +99,7 @@ export const Scene1Hook: React.FC = () => {
         })}
       </AbsoluteFill>
 
-      {/* Word reveal — centered */}
+      {/* Word reveal */}
       <AbsoluteFill
         style={{
           display: "flex",
@@ -118,18 +109,13 @@ export const Scene1Hook: React.FC = () => {
           gap: 12,
         }}
       >
-        <div
-          style={{
-            transform: `scale(${word1Scale})`,
-            opacity: word1Op,
-          }}
-        >
+        <div style={{ transform: `scale(${word1Scale})`, opacity: word1Op }}>
           <span
             style={{
               fontSize: 116,
               fontWeight: 900,
               color: theme.red,
-              fontFamily: dmSansFamily,
+              fontFamily: DM_SANS,
               letterSpacing: -3,
               display: "block",
               textAlign: "center",
@@ -139,19 +125,14 @@ export const Scene1Hook: React.FC = () => {
           </span>
         </div>
 
-        <div
-          style={{
-            transform: `scale(${word2Scale})`,
-            opacity: word2Op,
-          }}
-        >
+        <div style={{ transform: `scale(${word2Scale})`, opacity: word2Op }}>
           <span
             style={{
               fontSize: 116,
               fontWeight: 900,
               fontStyle: "italic",
               color: theme.red,
-              fontFamily: playfairFamily,
+              fontFamily: PLAYFAIR,
               letterSpacing: -2,
               display: "block",
               textAlign: "center",

@@ -1,9 +1,7 @@
 import React from "react";
 import { useCurrentFrame, interpolate } from "remotion";
-import { loadFont } from "@remotion/google-fonts/DMSans";
 import { theme } from "../theme";
-
-const { fontFamily } = loadFont();
+import { DM_SANS } from "./FontLoader";
 
 interface StrikethroughTextProps {
   text: string;
@@ -30,7 +28,6 @@ export const StrikethroughText: React.FC<StrikethroughTextProps> = ({
     extrapolateRight: "clamp",
   });
 
-  // Quick shake: horizontal sine wobble for 8 frames after appearance
   const shake =
     localFrame >= 0 && localFrame < 10
       ? Math.sin(localFrame * 2.8) * 10
@@ -56,7 +53,7 @@ export const StrikethroughText: React.FC<StrikethroughTextProps> = ({
           fontSize,
           fontWeight: 700,
           color: theme.red,
-          fontFamily,
+          fontFamily: DM_SANS,
           letterSpacing: -1,
           lineHeight: 1.2,
         }}

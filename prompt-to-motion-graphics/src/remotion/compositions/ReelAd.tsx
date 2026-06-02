@@ -1,6 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Sequence, useCurrentFrame, interpolate } from "remotion";
 import { theme } from "../theme";
+import { FontLoader } from "../components/FontLoader";
 import { Scene1Hook } from "../scenes/Scene1Hook";
 import { Scene2Problem } from "../scenes/Scene2Problem";
 import { Scene3Brand } from "../scenes/Scene3Brand";
@@ -36,6 +37,7 @@ const Flash: React.FC<{ triggerFrame: number; color: string }> = ({
 
 export const ReelAd: React.FC = () => (
   <AbsoluteFill>
+    <FontLoader />
     {/* Scene 1 – Hook           (  0 – 150 ) white bg */}
     <Sequence from={0} durationInFrames={150}>
       <Scene1Hook />

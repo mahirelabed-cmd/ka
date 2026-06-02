@@ -6,18 +6,13 @@ import {
   spring,
   interpolate,
 } from "remotion";
-import { loadFont as loadPlayfair } from "@remotion/google-fonts/PlayfairDisplay";
-import { loadFont as loadDMSans } from "@remotion/google-fonts/DMSans";
 import { theme } from "../theme";
-
-const { fontFamily: playfairFamily } = loadPlayfair();
-const { fontFamily: dmSansFamily } = loadDMSans();
+import { PLAYFAIR, DM_SANS } from "../components/FontLoader";
 
 export const Scene6CTA: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Slow scale-up 0.95 → 1.0 over the whole scene (90 frames)
   const overallScale = interpolate(frame, [0, 90], [0.95, 1.0], {
     extrapolateRight: "clamp",
   });
@@ -37,7 +32,6 @@ export const Scene6CTA: React.FC = () => {
     to: 1,
   });
 
-  // Arabic symbol pulse: spring to 1.06 then sine oscillation
   const pulseSpring = spring({
     frame,
     fps,
@@ -50,7 +44,6 @@ export const Scene6CTA: React.FC = () => {
       ? pulseSpring
       : 1.0 + 0.06 * Math.cos(((frame - 20) / 45) * Math.PI * 2);
 
-  // Cursor blink every 15 frames
   const cursorVisible = Math.floor(frame / 15) % 2 === 0;
 
   return (
@@ -65,7 +58,6 @@ export const Scene6CTA: React.FC = () => {
           transform: `scale(${overallScale})`,
         }}
       >
-        {/* Arabic symbol pulsing */}
         <div
           style={{
             fontSize: 110,
@@ -79,14 +71,13 @@ export const Scene6CTA: React.FC = () => {
           ع
         </div>
 
-        {/* Main headline */}
-        <div style={{ opacity: mainSp, textAlign: "center", position: "relative" }}>
+        <div style={{ opacity: mainSp, textAlign: "center" }}>
           <span
             style={{
               fontSize: 96,
               fontWeight: 900,
               color: theme.white,
-              fontFamily: playfairFamily,
+              fontFamily: PLAYFAIR,
               letterSpacing: -2,
             }}
           >
@@ -97,7 +88,7 @@ export const Scene6CTA: React.FC = () => {
               fontSize: 96,
               fontWeight: 900,
               color: theme.white,
-              fontFamily: playfairFamily,
+              fontFamily: PLAYFAIR,
               opacity: cursorVisible ? 1 : 0,
               marginLeft: 6,
             }}
@@ -106,7 +97,6 @@ export const Scene6CTA: React.FC = () => {
           </span>
         </div>
 
-        {/* URL */}
         <div
           style={{
             opacity: urlSp,
@@ -117,7 +107,7 @@ export const Scene6CTA: React.FC = () => {
             style={{
               fontSize: 32,
               color: theme.white,
-              fontFamily: dmSansFamily,
+              fontFamily: DM_SANS,
               letterSpacing: 7,
               fontWeight: 400,
             }}

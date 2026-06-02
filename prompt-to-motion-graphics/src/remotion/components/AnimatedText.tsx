@@ -1,10 +1,6 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig, spring } from "remotion";
-import { loadFont as loadPlayfair } from "@remotion/google-fonts/PlayfairDisplay";
-import { loadFont as loadDMSans } from "@remotion/google-fonts/DMSans";
-
-const { fontFamily: playfairFamily } = loadPlayfair();
-const { fontFamily: dmSansFamily } = loadDMSans();
+import { PLAYFAIR, DM_SANS } from "./FontLoader";
 
 interface AnimatedWordProps {
   text: string;
@@ -49,7 +45,7 @@ export const AnimatedWord: React.FC<AnimatedWordProps> = ({
         color,
         transform: `scale(${scaleSp})`,
         opacity: opSp,
-        fontFamily: italic ? playfairFamily : dmSansFamily,
+        fontFamily: italic ? PLAYFAIR : DM_SANS,
         lineHeight: 1.1,
       }}
     >

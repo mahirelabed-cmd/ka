@@ -6,11 +6,9 @@ import {
   spring,
   interpolate,
 } from "remotion";
-import { loadFont } from "@remotion/google-fonts/DMSans";
 import { theme } from "../theme";
 import { Pill } from "../components/Pill";
-
-const { fontFamily } = loadFont();
+import { DM_SANS } from "../components/FontLoader";
 
 const TAGLINE_WORDS = ["Arabisch.", "Strukturiert.", "Auf Deutsch."];
 const PILLS = ["Live Online", "4–8 Schüler", "Madina Bücher"];
@@ -32,7 +30,6 @@ export const Scene3Brand: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ background: theme.red }}>
-      {/* White radial glow at center */}
       <div
         style={{
           position: "absolute",
@@ -49,7 +46,7 @@ export const Scene3Brand: React.FC = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          padding: "80px 80px",
+          padding: "80px",
           gap: 48,
         }}
       >
@@ -67,7 +64,7 @@ export const Scene3Brand: React.FC = () => {
               fontWeight: 900,
               color: theme.white,
               letterSpacing: 14,
-              fontFamily,
+              fontFamily: DM_SANS,
               lineHeight: 1,
             }}
           >
@@ -77,12 +74,7 @@ export const Scene3Brand: React.FC = () => {
 
         {/* Tagline: staggered words */}
         <div
-          style={{
-            display: "flex",
-            gap: 20,
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
+          style={{ display: "flex", gap: 20, flexWrap: "wrap", justifyContent: "center" }}
         >
           {TAGLINE_WORDS.map((word, i) => {
             const sp = spring({
@@ -98,7 +90,7 @@ export const Scene3Brand: React.FC = () => {
                 style={{
                   fontSize: 46,
                   color: theme.white,
-                  fontFamily,
+                  fontFamily: DM_SANS,
                   fontWeight: 500,
                   opacity: sp,
                   display: "inline-block",
@@ -111,14 +103,9 @@ export const Scene3Brand: React.FC = () => {
           })}
         </div>
 
-        {/* Pills from below */}
+        {/* Pills */}
         <div
-          style={{
-            display: "flex",
-            gap: 24,
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
+          style={{ display: "flex", gap: 24, flexWrap: "wrap", justifyContent: "center" }}
         >
           {PILLS.map((pill, i) => {
             const sp = spring({

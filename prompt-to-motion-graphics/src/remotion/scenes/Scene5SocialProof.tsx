@@ -6,12 +6,8 @@ import {
   spring,
   interpolate,
 } from "remotion";
-import { loadFont as loadPlayfair } from "@remotion/google-fonts/PlayfairDisplay";
-import { loadFont as loadDMSans } from "@remotion/google-fonts/DMSans";
 import { theme } from "../theme";
-
-const { fontFamily: playfairFamily } = loadPlayfair();
-const { fontFamily: dmSansFamily } = loadDMSans();
+import { PLAYFAIR, DM_SANS } from "../components/FontLoader";
 
 const STAR_DELAYS = [0, 6, 12, 18, 24];
 
@@ -45,7 +41,6 @@ export const Scene5SocialProof: React.FC = () => {
           gap: 44,
         }}
       >
-        {/* 5 Stars staggered from left */}
         <div style={{ display: "flex", gap: 14 }}>
           {STAR_DELAYS.map((delay, i) => {
             const sp = spring({
@@ -73,7 +68,6 @@ export const Scene5SocialProof: React.FC = () => {
           })}
         </div>
 
-        {/* Quote */}
         <div
           style={{
             transform: `translateY(${interpolate(quoteSp, [0, 1], [44, 0])}px)`,
@@ -84,7 +78,7 @@ export const Scene5SocialProof: React.FC = () => {
             style={{
               fontSize: 54,
               color: theme.red,
-              fontFamily: playfairFamily,
+              fontFamily: PLAYFAIR,
               fontStyle: "italic",
               fontWeight: 600,
               lineHeight: 1.4,
@@ -95,7 +89,6 @@ export const Scene5SocialProof: React.FC = () => {
           </p>
         </div>
 
-        {/* Name */}
         <div
           style={{
             opacity: nameSp * 0.6,
@@ -106,7 +99,7 @@ export const Scene5SocialProof: React.FC = () => {
             style={{
               fontSize: 34,
               color: theme.red,
-              fontFamily: dmSansFamily,
+              fontFamily: DM_SANS,
               fontWeight: 500,
             }}
           >
