@@ -1,11 +1,13 @@
 import React from "react";
 import {
   AbsoluteFill,
+  Audio,
   Sequence,
   useCurrentFrame,
   useVideoConfig,
   interpolate,
   spring,
+  staticFile,
 } from "remotion";
 
 // ─── Brand Constants ──────────────────────────────────────────────────────────
@@ -1172,6 +1174,13 @@ export const MadoWebdesignReel: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ background: BG_DARK, fontFamily: FONT }}>
+      {/* Background music — dark electronic ambient pad */}
+      <Audio
+        src={staticFile("bg-music.wav")}
+        volume={0.72}
+        startFrom={0}
+      />
+
       <Sequence from={s1Start} durationInFrames={s2Start - s1Start + 8}>
         <Scene1Hook />
       </Sequence>
