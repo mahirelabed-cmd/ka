@@ -55,6 +55,62 @@ const AmbientGlow: React.FC<{ x?: string; y?: string; color?: string; opacity?: 
   />
 );
 
+// Animated pulsing glow ring
+const PulseRing: React.FC<{ frame: number; delay?: number; x?: string; y?: string }> = ({
+  frame, delay = 0, x = "50%", y = "50%",
+}) => {
+  const { fps } = useVideoConfig();
+  const t = (frame - delay) / fps;
+  const scale = 1 + (t % 2) * 0.4;
+  const opacity = Math.max(0, 0.35 - ((t % 2) / 2) * 0.35);
+  return (
+    <div style={{
+      position: "absolute",
+      left: x, top: y,
+      transform: `translate(-50%, -50%) scale(${scale})`,
+      width: 320, height: 320,
+      borderRadius: "50%",
+      border: `2px solid rgba(59,130,246,${opacity})`,
+      boxShadow: `0 0 40px rgba(59,130,246,${opacity * 0.5})`,
+      pointerEvents: "none",
+    }} />
+  );
+};
+
+// Floating particles layer
+const Particles: React.FC<{ frame: number; count?: number; color?: string }> = ({
+  frame, count = 18, color = BLUE_LIGHT,
+}) => {
+  const { fps } = useVideoConfig();
+  const t = frame / fps;
+  const pts = Array.from({ length: count }, (_, i) => {
+    const seed = i * 137.508;
+    const x = ((seed * 9.7) % 90) + 5;
+    const baseY = ((seed * 7.3) % 90) + 5;
+    const speed = 0.8 + (i % 5) * 0.35;
+    const y = ((baseY - t * speed * 3) % 100 + 100) % 100;
+    const size = 1.5 + (i % 4) * 0.8;
+    const pulse = 0.15 + 0.12 * Math.sin(t * (1.2 + i * 0.18) + i);
+    return { x, y, size, pulse };
+  });
+  return (
+    <>
+      {pts.map((p, i) => (
+        <div key={i} style={{
+          position: "absolute",
+          left: `${p.x}%`, top: `${p.y}%`,
+          width: p.size, height: p.size,
+          borderRadius: "50%",
+          background: color,
+          opacity: p.pulse,
+          boxShadow: `0 0 ${p.size * 3}px ${color}`,
+          pointerEvents: "none",
+        }} />
+      ))}
+    </>
+  );
+};
+
 // ─── Scene 1: Hook ─────────────────────────────────────────────────────────────
 const Scene1Hook: React.FC = () => {
   const frame = useCurrentFrame();
@@ -62,15 +118,11 @@ const Scene1Hook: React.FC = () => {
 
   const line1Spring = useSpring(frame, 0, 18, 0.7);
   const line2Spring = useSpring(frame, 20, 16, 0.75);
-  const line3Spring = useSpring(frame, 48, 20, 0.8);
 
   const line1Y = interpolate(line1Spring, [0, 1], [60, 0]);
   const line2Y = interpolate(line2Spring, [0, 1], [50, 0]);
-  const line3Y = interpolate(line3Spring, [0, 1], [40, 0]);
-
   const line1Opacity = interpolate(line1Spring, [0, 0.4, 1], [0, 0, 1]);
   const line2Opacity = interpolate(line2Spring, [0, 0.4, 1], [0, 0, 1]);
-  const line3Opacity = interpolate(line3Spring, [0, 0.4, 1], [0, 0, 1]);
 
   const line1Scale = interpolate(line1Spring, [0, 1], [0.85, 1]);
   const line2Scale = interpolate(line2Spring, [0, 1], [0.9, 1]);
@@ -88,8 +140,11 @@ const Scene1Hook: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: BG_DARK, fontFamily: FONT, overflow: "hidden" }}>
       <GridBg />
-      <AmbientGlow x="30%" y="20%" color={BLUE_GLOW} opacity={0.25} />
-      <AmbientGlow x="70%" y="70%" color="#1E40AF" opacity={0.2} />
+      <Particles frame={frame} count={22} color={BLUE_LIGHT} />
+      <AmbientGlow x="30%" y="20%" color={BLUE_GLOW} opacity={0.3} />
+      <AmbientGlow x="70%" y="70%" color="#1E40AF" opacity={0.25} />
+      <PulseRing frame={frame} delay={0}  x="20%" y="30%" />
+      <PulseRing frame={frame} delay={30} x="80%" y="70%" />
 
       {/* Background mock browser UI */}
       <div
@@ -515,8 +570,10 @@ const Scene2Features: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: BG_DARK, fontFamily: FONT, overflow: "hidden" }}>
       <GridBg />
-      <AmbientGlow x="80%" y="10%" color={BLUE_GLOW} opacity={0.3} />
-      <AmbientGlow x="20%" y="90%" color="#312E81" opacity={0.25} />
+      <Particles frame={frame} count={14} color="#818CF8" />
+      <AmbientGlow x="80%" y="10%" color={BLUE_GLOW} opacity={0.32} />
+      <AmbientGlow x="20%" y="90%" color="#312E81" opacity={0.28} />
+      <PulseRing frame={frame} delay={5} x="85%" y="15%" />
 
       {/* Floating browser mockup */}
       <div
@@ -595,7 +652,6 @@ const Scene3Transform: React.FC = () => {
 
   const titleProgress = spring({ frame: frame - 85, fps, config: { damping: 14, mass: 0.7 } });
   const subtitle1Progress = spring({ frame: frame - 105, fps, config: { damping: 16, mass: 0.75 } });
-  const subtitle2Progress = spring({ frame: frame - 125, fps, config: { damping: 16, mass: 0.75 } });
 
   const glowOpacity = interpolate(eased, [0.3, 0.7, 1], [0, 0.8, 0.3]);
 
@@ -787,7 +843,11 @@ const Scene4ValueProps: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: BG_DARK, fontFamily: FONT, overflow: "hidden" }}>
       <GridBg />
-      <AmbientGlow x="50%" y="50%" color={BLUE_GLOW} opacity={0.2} />
+      <Particles frame={frame} count={20} color="#A78BFA" />
+      <AmbientGlow x="50%" y="50%" color={BLUE_GLOW} opacity={0.25} />
+      <AmbientGlow x="20%" y="20%" color="#7C3AED" opacity={0.18} />
+      <PulseRing frame={frame} delay={0}  x="50%" y="50%" />
+      <PulseRing frame={frame} delay={20} x="50%" y="50%" />
 
       <div
         style={{
@@ -940,9 +1000,13 @@ const Scene5CTA: React.FC = () => {
       <GridBg />
 
       {/* Atmospheric glow layers */}
-      <AmbientGlow x="50%" y="30%" color={BLUE_GLOW} opacity={0.35} />
-      <AmbientGlow x="20%" y="80%" color="#312E81" opacity={0.25} />
-      <AmbientGlow x="80%" y="80%" color={BLUE_GLOW} opacity={0.2} />
+      <AmbientGlow x="50%" y="30%" color={BLUE_GLOW} opacity={0.38} />
+      <AmbientGlow x="20%" y="80%" color="#312E81" opacity={0.28} />
+      <AmbientGlow x="80%" y="80%" color={BLUE_GLOW} opacity={0.22} />
+      <PulseRing frame={frame} delay={0}  x="50%" y="45%" />
+      <PulseRing frame={frame} delay={15} x="50%" y="45%" />
+      <PulseRing frame={frame} delay={30} x="50%" y="45%" />
+      <Particles frame={frame} count={28} color={BLUE_LIGHT} />
 
       {/* Particles */}
       {particles.map((p) => (
@@ -1156,7 +1220,6 @@ const FlashTransition: React.FC<{ startFrame: number; endFrame: number }> = ({
 
 // ─── Root Composition ─────────────────────────────────────────────────────────
 export const MadoWebdesignReel: React.FC = () => {
-  const { fps } = useVideoConfig();
 
   // Scene timing (in frames at 30fps)
   // Scene 1: 0-3s   = frames 0-90
