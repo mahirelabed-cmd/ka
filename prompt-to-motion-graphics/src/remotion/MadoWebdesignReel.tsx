@@ -1131,10 +1131,11 @@ const FlashTransition: React.FC<{ startFrame: number; endFrame: number }> = ({
   endFrame,
 }) => {
   const frame = useCurrentFrame();
+  const mid = (startFrame + endFrame) / 2;
   const opacity = interpolate(
     frame,
-    [startFrame, startFrame + 4, endFrame - 4, endFrame],
-    [0, 1, 1, 0],
+    [startFrame, mid, endFrame],
+    [0, 1, 0],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
   );
   return (
