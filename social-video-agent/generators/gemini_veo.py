@@ -23,7 +23,7 @@ def generate_video(prompt: str, output_path: str, duration_seconds: int = 8) -> 
 
     # Veo 2 supports 5-8 second videos, aspect ratio 9:16 for Shorts/Reels/TikTok
     operation = client.models.generate_video(
-        model="veo-2.0-generate-001",
+        model="veo-3.1-generate-preview",
         prompt=prompt,
         config=types.GenerateVideoConfig(
             aspect_ratio="9:16",
