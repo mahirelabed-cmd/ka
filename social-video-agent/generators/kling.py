@@ -65,7 +65,11 @@ def _request(method: str, path: str, body: dict = None) -> dict:
         with urllib.request.urlopen(req) as r:
             return json.loads(r.read())
     except urllib.error.HTTPError as e:
-        err = json.loads(e.read())
+        raw = e.read()
+        try:
+            err = json.loads(raw)
+        except Exception:
+            err = raw.decode(errors="replace")
         raise RuntimeError(f"Kling API Fehler {e.code}: {err}")
 
 
