@@ -35,7 +35,13 @@ def run(
         duration = int(os.getenv("VIDEO_DURATION_SECONDS", "8"))
         output_path = build_video_path(prompt)
 
-        if os.getenv("KLING_ACCESS_KEY") and os.getenv("KLING_ACCESS_KEY") != "DEIN_KLING_ACCESS_KEY":
+        runway_key = os.getenv("RUNWAY_API_KEY", "")
+        kling_key = os.getenv("KLING_ACCESS_KEY", "")
+
+        if runway_key and runway_key != "DEIN_RUNWAY_API_KEY":
+            from generators.runway import generate_video
+            video_path = generate_video(prompt, output_path, duration=duration)
+        elif kling_key and kling_key != "DEIN_KLING_ACCESS_KEY":
             from generators.kling import generate_video
             video_path = generate_video(prompt, output_path, duration=duration)
         else:
