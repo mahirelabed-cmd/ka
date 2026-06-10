@@ -32,11 +32,15 @@ def run(
 
     # 1. Video generieren (falls kein fertiges Video angegeben)
     if not video_path:
-        from generators.gemini_veo import generate_video
-
         duration = int(os.getenv("VIDEO_DURATION_SECONDS", "8"))
         output_path = build_video_path(prompt)
-        video_path = generate_video(prompt, output_path, duration_seconds=duration)
+
+        if os.getenv("KLING_ACCESS_KEY") and os.getenv("KLING_ACCESS_KEY") != "DEIN_KLING_ACCESS_KEY":
+            from generators.kling import generate_video
+            video_path = generate_video(prompt, output_path, duration=duration)
+        else:
+            from generators.gemini_veo import generate_video
+            video_path = generate_video(prompt, output_path, duration_seconds=duration)
     else:
         print(f"[Agent] Bestehendes Video wird verwendet: {video_path}")
 
