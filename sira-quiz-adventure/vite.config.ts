@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
-  // GitHub-Pages-Projektpfad (https://mahirelabed-cmd.github.io/ka/)
-  base: '/ka/',
+  // Relative Basis: funktioniert auf GitHub Pages und CDN-Hosts gleichermaßen
+  base: './',
   plugins: [
     react(),
     VitePWA({
