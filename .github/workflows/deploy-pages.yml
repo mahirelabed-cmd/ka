@@ -1,0 +1,58 @@
+name: Deploy Sira Quiz Adventure to GitHub Pages
+
+on:
+  push:
+    branches:
+      - claude/file-prompt-execution-scuyrt
+    paths:
+      - 'sira-quiz-adventure/**'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: sira-quiz-adventure/package-lock.json
+      - name: Install dependencies
+        working-directory: sira-quiz-adventure
+        run: npm ci
+      - name: Run tests
+        working-directory: sira-quiz-adventure
+        run: npm test
+      - name: Build
+        working-directory: sira-quiz-adventure
+        run: npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: sira-quiz-adventure/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
