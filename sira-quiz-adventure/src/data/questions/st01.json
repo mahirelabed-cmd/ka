@@ -1,0 +1,567 @@
+[
+  {
+    "id": "st01-kids-001",
+    "station": 1,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "In welcher Stadt wurde Muhammad ﷺ geboren?",
+    "options": ["Medina", "Mekka", "Taif", "Jerusalem"],
+    "answerIndex": 1,
+    "explanation": "Muhammad ﷺ wurde in Mekka geboren. Dort steht auch die Kaaba, zu der viele Menschen kamen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-kids-002",
+    "station": 1,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wie hieß die Mutter von Muhammad ﷺ?",
+    "options": ["Halima", "Khadidscha", "Amina", "Fatima"],
+    "answerIndex": 2,
+    "explanation": "Seine Mutter hieß Amina. Sie starb, als er noch ein kleines Kind war, und er wuchs als Waisenkind auf.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-kids-003",
+    "station": 1,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wer kümmerte sich nach dem Tod seiner Mutter zuerst um Muhammad ﷺ?",
+    "options": ["Sein Großvater Abdul-Muttalib", "Sein Onkel Abu Lahab", "Sein Freund Abu Bakr (r.a.)", "Seine Amme Halima"],
+    "answerIndex": 0,
+    "explanation": "Sein Großvater Abdul-Muttalib nahm ihn liebevoll bei sich auf. Nach dessen Tod sorgte sein Onkel Abu Talib für ihn.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-kids-004",
+    "station": 1,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Welcher Onkel wurde später der Vormund von Muhammad ﷺ?",
+    "options": ["al-Abbas", "Abu Lahab", "Hamza", "Abu Talib"],
+    "answerIndex": 3,
+    "explanation": "Sein Onkel Abu Talib nahm ihn nach dem Tod des Großvaters auf und beschützte ihn viele Jahre lang.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-kids-005",
+    "station": 1,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wie hieß die Amme, bei der Muhammad ﷺ als kleines Kind in der Wüste lebte?",
+    "options": ["Amina", "Sumayya", "Aischa", "Halima"],
+    "answerIndex": 3,
+    "explanation": "Die Amme Halima nahm ihn bei sich in der Wüste auf und sorgte liebevoll für ihn.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-kids-006",
+    "station": 1,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Welchen Beinamen gaben die Menschen in Mekka Muhammad ﷺ?",
+    "options": ["al-Faruq", "al-Amin", "Asadullah", "Dhun-Nurain"],
+    "answerIndex": 1,
+    "explanation": "„Al-Amin“ bedeutet „der Vertrauenswürdige“. Die Mekkaner wussten: Ihm kann man vertrauen, denn er sagt immer die Wahrheit.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-kids-007",
+    "station": 1,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Was bedeutet der Beiname „al-Amin“?",
+    "options": ["der Vertrauenswürdige", "der Starke", "der Reiche", "der Schnelle"],
+    "answerIndex": 0,
+    "explanation": "„Al-Amin“ heißt „der Vertrauenswürdige“. Wer ehrlich ist, dem vertrauen die Menschen gerne.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-kids-008",
+    "station": 1,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wie löste Muhammad ﷺ den Streit darum, wer den Schwarzen Stein einsetzen darf?",
+    "options": ["Er setzte den Stein heimlich allein ein", "Er ließ die Stämme losen", "Er legte den Stein auf ein Tuch, und alle hoben gemeinsam an", "Er versteckte den Stein"],
+    "answerIndex": 2,
+    "explanation": "Jeder Stamm durfte das Tuch mit anheben. So waren alle zufrieden, und der Streit war friedlich beendet.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-kids-009",
+    "station": 1,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Der Vater von Muhammad ﷺ starb schon vor seiner Geburt.",
+    "answer": true,
+    "explanation": "Das stimmt. Sein Vater Abdullah starb vor seiner Geburt, darum wuchs Muhammad ﷺ als Waisenkind auf.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-kids-010",
+    "station": 1,
+    "level": "kids",
+    "type": "true_false",
+    "question": "In Mekka gab es einen Bund, in dem Menschen versprachen, Schwachen beizustehen, wenn ihnen Unrecht geschah.",
+    "answer": true,
+    "explanation": "Das stimmt. Dieser Bund hieß Hilf al-Fudul. Auch der junge Muhammad ﷺ war dabei.",
+    "source": "Ibn Hisham; Musnad Ahmad",
+    "pearlId": "pearl-justice-pact"
+  },
+  {
+    "id": "st01-kids-011",
+    "station": 1,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Die Menschen in Mekka nannten Muhammad ﷺ „den Vergesslichen“.",
+    "answer": false,
+    "explanation": "Das stimmt nicht. Sie nannten ihn „al-Amin“, den Vertrauenswürdigen, weil er ehrlich und zuverlässig war.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-kids-012",
+    "station": 1,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Khadidscha (r.a.) schätzte Muhammad ﷺ vor allem, weil er sehr reich war.",
+    "answer": false,
+    "explanation": "Das stimmt nicht. Sie schätzte ihn wegen seiner Ehrlichkeit und seines guten Charakters. Später heirateten die beiden.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-kids-013",
+    "station": 1,
+    "level": "kids",
+    "type": "order",
+    "question": "Bringe die Ereignisse aus der Kindheit von Muhammad ﷺ in die richtige Reihenfolge.",
+    "items": [
+      "Muhammad ﷺ lebt als kleines Kind bei der Amme Halima.",
+      "Seine Mutter Amina stirbt.",
+      "Sein Großvater Abdul-Muttalib sorgt für ihn.",
+      "Sein Onkel Abu Talib wird sein Vormund."
+    ],
+    "explanation": "Zuerst lebte er bei der Amme Halima, dann starb seine Mutter. Danach kümmerten sich erst sein Großvater und dann sein Onkel um ihn.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-kids-014",
+    "station": 1,
+    "level": "kids",
+    "type": "match",
+    "question": "Ordne jede Person ihrer Rolle im Leben von Muhammad ﷺ zu.",
+    "pairs": [
+      { "left": "Amina", "right": "seine Mutter" },
+      { "left": "Halima", "right": "seine Amme" },
+      { "left": "Abu Talib", "right": "sein Onkel und Vormund" }
+    ],
+    "explanation": "Viele liebe Menschen halfen dem Waisenkind Muhammad ﷺ. So lernte er früh, wie wichtig Fürsorge ist.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-youth-001",
+    "station": 1,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "In welchem Jahr wurde der Prophet ﷺ ungefähr geboren?",
+    "options": ["um 570 n. Chr.", "um 540 n. Chr.", "um 610 n. Chr.", "um 632 n. Chr."],
+    "answerIndex": 0,
+    "explanation": "Nach verbreiteter Überlieferung wurde er um das Jahr 570 geboren, im sogenannten „Jahr des Elefanten“.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-youth-002",
+    "station": 1,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Warum wird das Geburtsjahr des Propheten ﷺ „Jahr des Elefanten“ genannt?",
+    "options": [
+      "Weil in Mekka ein Elefant als Haustier lebte",
+      "Weil die Quraisch mit Elefanten handelten",
+      "Weil Abraha in diesem Jahr mit einem Heer samt Elefant gegen die Kaaba zog",
+      "Weil ein Elefant auf den Münzen Mekkas abgebildet war"
+    ],
+    "answerIndex": 2,
+    "explanation": "Abraha zog mit einem Heer und einem Elefanten gegen die Kaaba, doch sein Plan scheiterte. Daran erinnert Sure al-Fil.",
+    "source": "Koran, Sure 105 (al-Fil); Ibn Hisham",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-youth-003",
+    "station": 1,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Welche Sure erinnert an das Ereignis mit Abrahas Heer?",
+    "options": ["Sure al-Masad (111)", "Sure al-Kauthar (108)", "Sure al-Ichlas (112)", "Sure al-Fil (105)"],
+    "answerIndex": 3,
+    "explanation": "Sure al-Fil, „der Elefant“, erinnert daran, wie Allah die Kaaba vor Abrahas Heer schützte.",
+    "source": "Koran, Sure 105 (al-Fil)",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-youth-004",
+    "station": 1,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Wohin führte die Handelsreise, die der Prophet ﷺ im Auftrag Khadidschas (r.a.) unternahm?",
+    "options": ["nach Jemen", "nach Abessinien", "nach Syrien", "nach Persien"],
+    "answerIndex": 2,
+    "explanation": "Er reiste als Händler für Khadidscha (r.a.) nach Syrien. Seine Ehrlichkeit auf dieser Reise beeindruckte sie sehr.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-youth-005",
+    "station": 1,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Was war der Bund „Hilf al-Fudul“?",
+    "options": [
+      "ein Handelsvertrag zwischen Mekka und Syrien",
+      "ein Bund mehrerer Sippen, jedem Unrecht Erlittenen beizustehen",
+      "ein Bündnis für den Krieg gegen Nachbarstämme",
+      "eine Vereinbarung über die Pflege der Kaaba"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mehrere Sippen versprachen, jedem beizustehen, dem Unrecht geschah – egal, woher er kam. Der junge Muhammad ﷺ war bei diesem Bund dabei.",
+    "source": "Ibn Hisham; Musnad Ahmad",
+    "pearlId": "pearl-justice-pact"
+  },
+  {
+    "id": "st01-youth-006",
+    "station": 1,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Aus welchem Stamm kam die Amme Halima?",
+    "options": ["Banu Hashim", "Banu Saʿd", "Banu Umayya", "Banu Machzum"],
+    "answerIndex": 1,
+    "explanation": "Halima gehörte zum Stamm der Banu Saʿd. Bei ihr verbrachte der Prophet ﷺ seine ersten Lebensjahre in der Wüste.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-youth-007",
+    "station": 1,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Wie alt war der Prophet ﷺ ungefähr, als seine Mutter Amina starb?",
+    "options": ["drei Jahre", "zwölf Jahre", "sechs Jahre", "zwanzig Jahre"],
+    "answerIndex": 2,
+    "explanation": "Seine Mutter starb, als er etwa sechs Jahre alt war. Danach nahm ihn sein Großvater Abdul-Muttalib zu sich.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-youth-008",
+    "station": 1,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Khadidscha (r.a.) war eine angesehene und erfolgreiche Kauffrau in Mekka.",
+    "answer": true,
+    "explanation": "Das stimmt. Khadidscha (r.a.) führte erfolgreich Handel und schätzte Muhammad ﷺ wegen seiner Ehrlichkeit als Händler.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-youth-009",
+    "station": 1,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Der Beiname „al-Amin“ wurde dem Propheten ﷺ erst nach Beginn der Offenbarung gegeben.",
+    "answer": false,
+    "explanation": "Das stimmt nicht. Schon lange vor der Offenbarung nannten ihn die Mekkaner „al-Amin“, weil sie ihm vertrauten.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-youth-010",
+    "station": 1,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Anlass für den Bund Hilf al-Fudul war ein fremder Kaufmann in Mekka, der sein Geld nicht erhielt.",
+    "answer": true,
+    "explanation": "Das stimmt. Einem fremden Kaufmann wurde der Lohn verweigert. Daraufhin schlossen mehrere Sippen den Bund, Unrecht Erlittenen beizustehen.",
+    "source": "Ibn Hisham; Musnad Ahmad",
+    "pearlId": "pearl-justice-pact"
+  },
+  {
+    "id": "st01-youth-011",
+    "station": 1,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Beim Schiedsspruch um den Schwarzen Stein durfte nur ein einziger Stamm den Stein anheben.",
+    "answer": false,
+    "explanation": "Das stimmt nicht. Muhammad ﷺ legte den Stein auf ein Tuch, sodass alle Stämme gemeinsam anheben konnten. So fühlte sich niemand übergangen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-youth-012",
+    "station": 1,
+    "level": "youth",
+    "type": "order",
+    "question": "Ordne die Stationen der frühen Jahre des Propheten ﷺ chronologisch.",
+    "items": [
+      "Geburt in Mekka im Jahr des Elefanten",
+      "Kindheit bei der Amme Halima vom Stamm Banu Saʿd",
+      "Tod der Mutter Amina",
+      "Handelsreise nach Syrien als junger Mann"
+    ],
+    "explanation": "Nach der Geburt verbrachte er die ersten Jahre bei Halima, dann starb seine Mutter. Als junger Mann reiste er für den Handel nach Syrien.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-youth-013",
+    "station": 1,
+    "level": "youth",
+    "type": "order",
+    "question": "Bringe die Ereignisse aus Jugend und frühem Erwachsenenleben des Propheten ﷺ in die richtige Reihenfolge.",
+    "items": [
+      "Arbeit als Hirte in Mekka",
+      "Handelsreise nach Syrien im Auftrag Khadidschas (r.a.)",
+      "Heirat mit Khadidscha (r.a.)",
+      "Schiedsspruch beim Einsetzen des Schwarzen Steins"
+    ],
+    "explanation": "Als Jugendlicher hütete er Schafe, später reiste er als Händler für Khadidscha (r.a.) und heiratete sie. Der Schiedsspruch beim Schwarzen Stein folgte einige Jahre danach.",
+    "source": "Ibn Hisham; Sahih al-Buchari",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-youth-014",
+    "station": 1,
+    "level": "youth",
+    "type": "match",
+    "question": "Ordne die Begriffe ihrer Bedeutung zu.",
+    "pairs": [
+      { "left": "al-Amin", "right": "der Vertrauenswürdige" },
+      { "left": "Hilf al-Fudul", "right": "Bund zum Beistand für Unrecht Erlittene" },
+      { "left": "Jahr des Elefanten", "right": "Geburtsjahr des Propheten ﷺ" },
+      { "left": "Banu Saʿd", "right": "Stamm der Amme Halima" }
+    ],
+    "explanation": "Diese Begriffe gehören zu den frühen Jahren in Mekka. Sie zeigen, wie Ehrlichkeit und Gerechtigkeit sein Leben von Anfang an prägten.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-justice-pact"
+  },
+  {
+    "id": "st01-adult-001",
+    "station": 1,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Welches Ereignis fällt nach verbreiteter Überlieferung in das Geburtsjahr des Propheten ﷺ (ca. 570)?",
+    "options": [
+      "die Eroberung Jerusalems durch die Perser",
+      "eine große Flut in Mekka",
+      "der Wiederaufbau der Kaaba",
+      "Abrahas Zug mit dem Elefantenheer gegen die Kaaba"
+    ],
+    "answerIndex": 3,
+    "explanation": "Nach verbreiteter Überlieferung wurde der Prophet ﷺ im „Jahr des Elefanten“ geboren, als Abrahas Heer gegen die Kaaba zog und scheiterte. Sure al-Fil verweist auf dieses Ereignis.",
+    "source": "Koran, Sure 105 (al-Fil); Ibn Hisham",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-adult-002",
+    "station": 1,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Auf welches ältere Werk geht die Sira von Ibn Hisham zurück?",
+    "options": [
+      "auf das Sira-Werk von Ibn Ishaq",
+      "auf Sahih Muslim",
+      "auf den Korankommentar von at-Tabari",
+      "auf den Muwatta von Malik"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ibn Hisham überarbeitete und überlieferte das ältere Sira-Werk von Ibn Ishaq. Es ist eine Hauptquelle der klassischen Lebensbeschreibung.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya (Einleitung)",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-adult-003",
+    "station": 1,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Wie alt war der Prophet ﷺ nach verbreiteter Überlieferung bei der Heirat mit Khadidscha (r.a.)?",
+    "options": ["etwa 20 Jahre", "etwa 25 Jahre", "etwa 30 Jahre", "etwa 40 Jahre"],
+    "answerIndex": 1,
+    "explanation": "Nach verbreiteter Überlieferung war er bei der Heirat etwa 25 Jahre alt. Khadidscha (r.a.) hatte ihn zuvor als ehrlichen Händler kennengelernt.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-adult-004",
+    "station": 1,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Worüber stritten die Stämme der Quraisch beim Wiederaufbau der Kaaba?",
+    "options": [
+      "wer die Baukosten tragen sollte",
+      "wer den Schlüssel der Kaaba erhalten sollte",
+      "wer den Schwarzen Stein an seinen Platz setzen darf",
+      "wer das neue Dach bauen darf"
+    ],
+    "answerIndex": 2,
+    "explanation": "Jeder Stamm wollte die Ehre, den Schwarzen Stein einzusetzen. Der Schiedsspruch Muhammads ﷺ mit dem Tuch beendete den Streit friedlich.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-adult-005",
+    "station": 1,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Worauf bezieht sich der Vers „Hat Er dich nicht als Waise gefunden und Zuflucht gegeben?“ (Sure 93:6)?",
+    "options": [
+      "auf die Waisenkindheit des Propheten ﷺ",
+      "auf die Auswanderung nach Medina",
+      "auf die erste Offenbarung in der Höhle Hira",
+      "auf den Bund Hilf al-Fudul"
+    ],
+    "answerIndex": 0,
+    "explanation": "Der Vers erinnert daran, dass der Prophet ﷺ als Waise aufwuchs und Allah ihm Menschen schenkte, die für ihn sorgten – etwa Abdul-Muttalib und Abu Talib.",
+    "source": "Koran, Sure 93:6",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-adult-006",
+    "station": 1,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Was wird über die spätere Haltung des Propheten ﷺ zum Bund Hilf al-Fudul überliefert?",
+    "options": [
+      "Er hat den Bund nie erwähnt.",
+      "Es wird überliefert, dass er einem solchen Bund auch im Islam wieder zugestimmt hätte.",
+      "Er erklärte den Bund nachträglich für ungültig.",
+      "Er verbot, über den Bund zu sprechen."
+    ],
+    "answerIndex": 1,
+    "explanation": "Es wird überliefert, dass der Prophet ﷺ sinngemäß sagte, er hätte einem solchen Bund auch im Islam wieder zugestimmt. Der Einsatz für Gerechtigkeit gilt für alle Menschen.",
+    "source": "Ibn Hisham; Musnad Ahmad",
+    "pearlId": "pearl-justice-pact"
+  },
+  {
+    "id": "st01-adult-007",
+    "station": 1,
+    "level": "adult",
+    "type": "true_false",
+    "question": "Sure al-Fil (105) bezieht sich auf Abrahas Zug mit dem Elefantenheer gegen die Kaaba.",
+    "answer": true,
+    "explanation": "Das ist richtig. Die Sure erinnert daran, wie Allah die Kaaba vor Abrahas Heer schützte – nach verbreiteter Überlieferung im Geburtsjahr des Propheten ﷺ.",
+    "source": "Koran, Sure 105 (al-Fil)",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-adult-008",
+    "station": 1,
+    "level": "adult",
+    "type": "true_false",
+    "question": "Abdullah, der Vater des Propheten ﷺ, starb, als sein Sohn sechs Jahre alt war.",
+    "answer": false,
+    "explanation": "Das ist nicht korrekt. Abdullah starb bereits vor der Geburt seines Sohnes; die Mutter Amina starb, als der Prophet ﷺ etwa sechs Jahre alt war.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-adult-009",
+    "station": 1,
+    "level": "adult",
+    "type": "true_false",
+    "question": "Der Schiedsspruch beim Einsetzen des Schwarzen Steins fand nach verbreiteter Überlieferung statt, als der Prophet ﷺ etwa 35 Jahre alt war.",
+    "answer": true,
+    "explanation": "Das ist richtig. Der Wiederaufbau der Kaaba wird etwa fünf Jahre vor Beginn der Offenbarung angesetzt, als der Prophet ﷺ rund 35 Jahre alt war.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-truthfulness"
+  },
+  {
+    "id": "st01-adult-010",
+    "station": 1,
+    "level": "adult",
+    "type": "order",
+    "question": "Ordne die folgenden Ereignisse aus dem Leben des Propheten ﷺ chronologisch.",
+    "items": [
+      "Geburt im Jahr des Elefanten (ca. 570)",
+      "Tod der Mutter Amina",
+      "Tod des Großvaters Abdul-Muttalib",
+      "Heirat mit Khadidscha (r.a.)"
+    ],
+    "explanation": "Auf die Geburt um 570 folgten der Tod der Mutter (mit etwa sechs Jahren) und kurz darauf der des Großvaters. Die Heirat mit Khadidscha (r.a.) fand mit etwa 25 Jahren statt.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-adult-011",
+    "station": 1,
+    "level": "adult",
+    "type": "order",
+    "question": "Bringe die Ereignisse aus den Jahren vor der Offenbarung in die korrekte chronologische Reihenfolge.",
+    "items": [
+      "Bund Hilf al-Fudul in Mekka",
+      "Handelsreise nach Syrien im Auftrag Khadidschas (r.a.)",
+      "Heirat mit Khadidscha (r.a.)",
+      "Schiedsspruch beim Einsetzen des Schwarzen Steins"
+    ],
+    "explanation": "Den Bund Hilf al-Fudul erlebte der Prophet ﷺ als junger Mann. Es folgten die Handelsreise und die Heirat mit etwa 25 Jahren sowie der Schiedsspruch mit etwa 35 Jahren.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-justice-pact"
+  },
+  {
+    "id": "st01-adult-012",
+    "station": 1,
+    "level": "adult",
+    "type": "match",
+    "question": "Ordne die Personen ihrer Rolle im Leben des Propheten ﷺ zu.",
+    "pairs": [
+      { "left": "Abdullah", "right": "Vater, starb vor der Geburt" },
+      { "left": "Abdul-Muttalib", "right": "Großvater und erster Vormund" },
+      { "left": "Abu Talib", "right": "Onkel und späterer Vormund" },
+      { "left": "Khadidscha (r.a.)", "right": "Ehefrau und Kauffrau" }
+    ],
+    "explanation": "Diese vier Menschen prägten die frühen Lebensjahre des Propheten ﷺ in Mekka entscheidend.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-adult-013",
+    "station": 1,
+    "level": "adult",
+    "type": "match",
+    "question": "Ordne die Suren ihrem inhaltlichen Bezug zu.",
+    "pairs": [
+      { "left": "Sure al-Fil (105)", "right": "Abrahas Elefantenheer vor Mekka" },
+      { "left": "Sure ad-Duha (93:6)", "right": "Zuflucht für die Waise" },
+      { "left": "Sure Quraisch (106)", "right": "Handelsreisen der Quraisch" }
+    ],
+    "explanation": "Mehrere kurze Suren nehmen Bezug auf das Mekka der frühen Jahre: das Elefantenereignis, die Waisenkindheit und die Handelszüge der Quraisch.",
+    "source": "Koran, Suren 93, 105, 106",
+    "pearlId": "pearl-orphan-care"
+  },
+  {
+    "id": "st01-adult-014",
+    "station": 1,
+    "level": "adult",
+    "type": "match",
+    "question": "Ordne den Lebensereignissen des Propheten ﷺ das ungefähre Alter zu.",
+    "pairs": [
+      { "left": "Tod der Mutter Amina", "right": "etwa 6 Jahre" },
+      { "left": "Heirat mit Khadidscha (r.a.)", "right": "etwa 25 Jahre" },
+      { "left": "Schiedsspruch beim Schwarzen Stein", "right": "etwa 35 Jahre" }
+    ],
+    "explanation": "Diese Altersangaben folgen der verbreiteten Chronologie der klassischen Sira-Literatur.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-truthfulness"
+  }
+]

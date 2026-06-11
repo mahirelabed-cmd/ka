@@ -1,0 +1,565 @@
+[
+  {
+    "id": "st03-kids-001",
+    "station": 3,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wer glaubte als allererster Mensch an die Botschaft von Muhammad ﷺ?",
+    "options": ["Abu Talib", "Khadidscha (r.a.)", "Bilal (r.a.)", "Waraqa ibn Naufal"],
+    "answerIndex": 1,
+    "explanation": "Seine Frau Khadidscha (r.a.) glaubte ihm als allererster Mensch. Sie stand fest an seiner Seite.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-first-believers"
+  },
+  {
+    "id": "st03-kids-002",
+    "station": 3,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wer war der erste freie Mann, der Muslim wurde?",
+    "options": ["Abu Bakr (r.a.)", "Abu Lahab", "Umayya ibn Chalaf", "Waraqa ibn Naufal"],
+    "answerIndex": 0,
+    "explanation": "Abu Bakr (r.a.) war der erste freie Mann, der Muslim wurde. Er war ein enger Freund von Muhammad ﷺ.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-first-believers"
+  },
+  {
+    "id": "st03-kids-003",
+    "station": 3,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wer war der erste Junge, der Muslim wurde?",
+    "options": ["Zaid ibn Haritha (r.a.)", "Uthman ibn Affan (r.a.)", "Ali (r.a.)", "Talha (r.a.)"],
+    "answerIndex": 2,
+    "explanation": "Ali (r.a.) war der erste Junge, der Muslim wurde. Er lebte damals im Haus von Muhammad ﷺ.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-first-believers"
+  },
+  {
+    "id": "st03-kids-004",
+    "station": 3,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wo trafen sich die ersten Muslime heimlich?",
+    "options": ["an der Kaaba", "auf dem Markt", "im Haus des al-Arqam", "auf einem Berg in der Wüste"],
+    "answerIndex": 2,
+    "explanation": "Die ersten Muslime trafen sich heimlich im Haus des al-Arqam. Dort lernten sie gemeinsam über den Islam.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-kids-005",
+    "station": 3,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Was rief Bilal (r.a.) immer wieder, als er gequält wurde?",
+    "options": ["„Ahad, Ahad – Einer, Einer!“", "„Lasst mich los!“", "„Ich gebe auf!“", "„Helft mir, ihr Leute!“"],
+    "answerIndex": 0,
+    "explanation": "Bilal (r.a.) rief „Ahad, Ahad“ – das heißt „Einer, Einer“. Er meinte damit: Es gibt nur einen Gott, und daran halte ich fest.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-bilal-steadfastness"
+  },
+  {
+    "id": "st03-kids-006",
+    "station": 3,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wer kaufte Bilal (r.a.) frei, sodass er ein freier Mann wurde?",
+    "options": ["Abu Lahab", "Umayya ibn Chalaf", "Ali (r.a.)", "Abu Bakr (r.a.)"],
+    "answerIndex": 3,
+    "explanation": "Abu Bakr (r.a.) kaufte Bilal (r.a.) frei. So endete seine schlimme Zeit, und er war endlich frei.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-bilal-steadfastness"
+  },
+  {
+    "id": "st03-kids-007",
+    "station": 3,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Von welchem Hügel aus rief der Prophet ﷺ später alle Menschen von Mekka zusammen?",
+    "options": ["vom Hügel Safa", "vom Berg Uhud", "vom Berg an-Nur", "vom Hügel Marwa"],
+    "answerIndex": 0,
+    "explanation": "Der Prophet ﷺ stieg auf den Hügel Safa und rief die Menschen zusammen. Dort lud er sie offen zum Glauben an den einen Gott ein.",
+    "source": "Sahih al-Buchari",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-kids-008",
+    "station": 3,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wie lud der Prophet ﷺ die Menschen ganz am Anfang zum Islam ein?",
+    "options": ["laut auf dem Markt", "leise und im Geheimen", "mit Briefen an Könige", "mit einem großen Fest"],
+    "answerIndex": 1,
+    "explanation": "Am Anfang lud der Prophet ﷺ die Menschen leise und im Geheimen ein. So blieb die kleine Gruppe der Muslime sicher.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-kids-009",
+    "station": 3,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Ali (r.a.) lebte als Junge im Haus von Muhammad ﷺ.",
+    "answer": true,
+    "explanation": "Das stimmt. Ali (r.a.) wuchs im Haus von Muhammad ﷺ auf und wurde dort schon als Junge Muslim.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-first-believers"
+  },
+  {
+    "id": "st03-kids-010",
+    "station": 3,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Bilal (r.a.) hörte auf, an Allah zu glauben, als es ihm schlecht ging.",
+    "answer": false,
+    "explanation": "Das stimmt nicht. Bilal (r.a.) blieb ganz stark und hielt an seinem Glauben fest, auch als es sehr schwer für ihn war.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-bilal-steadfastness"
+  },
+  {
+    "id": "st03-kids-011",
+    "station": 3,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Zaid ibn Haritha (r.a.) gehörte zu den allerersten Muslimen.",
+    "answer": true,
+    "explanation": "Das stimmt. Zaid ibn Haritha (r.a.) gehörte von Anfang an zu den Muslimen und stand treu zum Propheten ﷺ.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-first-believers"
+  },
+  {
+    "id": "st03-kids-012",
+    "station": 3,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Der Onkel Abu Lahab freute sich über die Einladung zum Islam.",
+    "answer": false,
+    "explanation": "Das stimmt nicht. Abu Lahab wollte nicht zuhören und war gegen den Propheten ﷺ. Über ihn spricht die Sure al-Masad.",
+    "source": "Koran, Sure 111 (al-Masad)",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-kids-013",
+    "station": 3,
+    "level": "kids",
+    "type": "order",
+    "question": "Bringe die Ereignisse in die richtige Reihenfolge.",
+    "items": [
+      "Khadidscha (r.a.) glaubt als erster Mensch an die Botschaft.",
+      "Die ersten Muslime treffen sich heimlich im Haus des al-Arqam.",
+      "Der Prophet ﷺ ruft alle Menschen vom Hügel Safa."
+    ],
+    "explanation": "Zuerst glaubte Khadidscha (r.a.), dann trafen sich die ersten Muslime heimlich. Später lud der Prophet ﷺ alle Menschen offen ein.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-first-believers"
+  },
+  {
+    "id": "st03-kids-014",
+    "station": 3,
+    "level": "kids",
+    "type": "match",
+    "question": "Ordne jede Person richtig zu.",
+    "pairs": [
+      { "left": "Khadidscha (r.a.)", "right": "erste Frau, die Muslima wurde" },
+      { "left": "Abu Bakr (r.a.)", "right": "erster freier Mann, der Muslim wurde" },
+      { "left": "Ali (r.a.)", "right": "erster Junge, der Muslim wurde" }
+    ],
+    "explanation": "Diese drei gehörten zu den allerersten Muslimen. Sie glaubten dem Propheten ﷺ von Anfang an.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-first-believers"
+  },
+  {
+    "id": "st03-youth-001",
+    "station": 3,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Wie lange lud der Prophet ﷺ ungefähr im Stillen zum Islam ein, bevor er öffentlich rief?",
+    "options": ["etwa drei Jahre", "etwa zehn Jahre", "nur wenige Tage", "etwa zwanzig Jahre"],
+    "answerIndex": 0,
+    "explanation": "Etwa drei Jahre lang lud der Prophet ﷺ nur im Stillen ein. Erst danach begann der öffentliche Ruf.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-youth-002",
+    "station": 3,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Wer war Zaid ibn Haritha (r.a.)?",
+    "options": [
+      "ein Anführer der Quraisch",
+      "ein Händler aus Persien",
+      "ein Freigelassener des Propheten ﷺ und einer der ersten Muslime",
+      "ein Gelehrter aus Medina"
+    ],
+    "answerIndex": 2,
+    "explanation": "Zaid ibn Haritha (r.a.) war ein Freigelassener des Propheten ﷺ. Er gehörte zu den allerersten Muslimen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-first-believers"
+  },
+  {
+    "id": "st03-youth-003",
+    "station": 3,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Welche Frage stellte der Prophet ﷺ den Quraisch sinngemäß vom Hügel Safa?",
+    "options": [
+      "ob sie ihm Geld leihen würden",
+      "ob sie ihm glauben würden, wenn er sagte, hinter dem Berg stehe ein Heer",
+      "ob sie die Kaaba neu bauen wollten",
+      "ob sie mit ihm nach Syrien reisen würden"
+    ],
+    "answerIndex": 1,
+    "explanation": "Er fragte sinngemäß, ob sie ihm glauben würden, wenn er vor einem Heer hinter dem Berg warnte. Alle wussten: Er hatte noch nie gelogen.",
+    "source": "Sahih al-Buchari",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-youth-004",
+    "station": 3,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Warum lud der Prophet ﷺ zunächst nur im Verborgenen ein?",
+    "options": [
+      "weil ihm die Botschaft nicht wichtig war",
+      "weil er auf Reichtum wartete",
+      "weil die Quraisch ihn darum gebeten hatten",
+      "um die kleine Gemeinschaft der Muslime zu schützen"
+    ],
+    "answerIndex": 3,
+    "explanation": "Die Muslime waren anfangs nur wenige und schwach. Die stille Einladung schützte die junge Gemeinschaft vor der Übermacht der Quraisch.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-youth-005",
+    "station": 3,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Wer quälte Bilal (r.a.) in der Mittagshitze?",
+    "options": ["Abu Talib", "Umayya ibn Chalaf", "Waraqa ibn Naufal", "al-Arqam (r.a.)"],
+    "answerIndex": 1,
+    "explanation": "Sein damaliger Herr Umayya ibn Chalaf quälte Bilal (r.a.) in der glühenden Mittagshitze, weil er Muslim geworden war. Doch Bilal (r.a.) blieb standhaft.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-bilal-steadfastness"
+  },
+  {
+    "id": "st03-youth-006",
+    "station": 3,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Welche Sure bezieht sich auf Abu Lahab, der die Botschaft ablehnte?",
+    "options": ["Sure al-Fil (105)", "Sure al-Kauthar (108)", "Sure al-Masad (111)", "Sure al-Ichlas (112)"],
+    "answerIndex": 2,
+    "explanation": "Sure al-Masad (111) bezieht sich auf Abu Lahab, der den Propheten ﷺ beim öffentlichen Ruf schroff zurückwies.",
+    "source": "Koran, Sure 111 (al-Masad)",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-youth-007",
+    "station": 3,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Welche frühen Muslime kamen durch die Einladung von Abu Bakr (r.a.) zum Islam?",
+    "options": [
+      "Uthman ibn Affan (r.a.), Talha (r.a.) und az-Zubair (r.a.)",
+      "Abu Lahab und Abu Dschahl",
+      "nur seine eigenen Kinder",
+      "Umayya ibn Chalaf und seine Sippe"
+    ],
+    "answerIndex": 0,
+    "explanation": "Durch die ruhige, vertrauensvolle Einladung von Abu Bakr (r.a.) fanden unter anderem Uthman ibn Affan (r.a.), Talha (r.a.) und az-Zubair (r.a.) früh zum Islam.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-first-believers"
+  },
+  {
+    "id": "st03-youth-008",
+    "station": 3,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Die Quraisch antworteten am Hügel Safa sinngemäß, sie hätten den Propheten ﷺ nie lügen hören.",
+    "answer": true,
+    "explanation": "Das stimmt. Sie antworteten sinngemäß: „Wir haben dich nie lügen hören.“ Sein ehrlicher Ruf war die Grundlage seiner Einladung.",
+    "source": "Sahih al-Buchari",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-youth-009",
+    "station": 3,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Bilal (r.a.) stammte aus Persien.",
+    "answer": false,
+    "explanation": "Das stimmt nicht. Bilal (r.a.) stammte aus Abessinien und lebte als Sklave in Mekka, bis Abu Bakr (r.a.) ihn freikaufte.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-bilal-steadfastness"
+  },
+  {
+    "id": "st03-youth-010",
+    "station": 3,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Trotz der Qualen wiederholte Bilal (r.a.) standhaft „Ahad, Ahad“ – „Einer, Einer“.",
+    "answer": true,
+    "explanation": "Das stimmt. Selbst mit einem schweren Stein auf der Brust bekannte Bilal (r.a.) immer wieder den Glauben an den einen Gott.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-bilal-steadfastness"
+  },
+  {
+    "id": "st03-youth-011",
+    "station": 3,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Der Prophet ﷺ zwang die Mekkaner mit Gewalt, den Islam anzunehmen.",
+    "answer": false,
+    "explanation": "Das stimmt nicht. Er lud geduldig und mit Weisheit ein, erst im Stillen, dann öffentlich. Der Glaube kann nicht erzwungen werden.",
+    "source": "Koran, Sure 2:256; Ibn Hisham",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-youth-012",
+    "station": 3,
+    "level": "youth",
+    "type": "order",
+    "question": "Ordne die Phasen der frühen Daʿwa chronologisch.",
+    "items": [
+      "Der Prophet ﷺ beginnt, im Stillen zum Islam einzuladen.",
+      "Die ersten Muslime treffen sich im Haus des al-Arqam.",
+      "Der Prophet ﷺ ruft die Quraisch öffentlich vom Hügel Safa.",
+      "Abu Lahab weist die Einladung schroff zurück."
+    ],
+    "explanation": "Auf etwa drei Jahre stiller Einladung mit den Treffen im Haus des al-Arqam folgte der öffentliche Ruf vom Hügel Safa, den Abu Lahab schroff zurückwies.",
+    "source": "Ibn Hisham; Sahih al-Buchari",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-youth-013",
+    "station": 3,
+    "level": "youth",
+    "type": "order",
+    "question": "Bringe die Ereignisse aus dem Leben von Bilal (r.a.) in die richtige Reihenfolge.",
+    "items": [
+      "Bilal (r.a.) nimmt den Islam an.",
+      "Umayya ibn Chalaf quält ihn in der Mittagshitze, doch er bleibt standhaft.",
+      "Abu Bakr (r.a.) kauft ihn frei."
+    ],
+    "explanation": "Nachdem Bilal (r.a.) Muslim geworden war, wurde er hart gequält und blieb dennoch standhaft. Schließlich kaufte Abu Bakr (r.a.) ihn frei.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-bilal-steadfastness"
+  },
+  {
+    "id": "st03-youth-014",
+    "station": 3,
+    "level": "youth",
+    "type": "match",
+    "question": "Ordne die Begriffe richtig zu.",
+    "pairs": [
+      { "left": "Hügel Safa", "right": "Ort des ersten öffentlichen Rufes" },
+      { "left": "Dar al-Arqam", "right": "geheimer Treffpunkt der ersten Muslime" },
+      { "left": "Abessinien", "right": "Heimatland von Bilal (r.a.)" },
+      { "left": "Quraisch", "right": "führender Stamm in Mekka" }
+    ],
+    "explanation": "Diese Begriffe gehören zur frühen Zeit der Daʿwa in Mekka: der geheime Treffpunkt, der Ort des öffentlichen Rufes und die beteiligten Menschen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-adult-001",
+    "station": 3,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Warum wählte der Prophet ﷺ in den ersten Jahren die stille Einladung?",
+    "options": [
+      "um die kleine, verwundbare Gemeinschaft vor der Übermacht der Quraisch zu schützen",
+      "weil er sich seiner Botschaft nicht sicher war",
+      "weil die Quraisch es ihm befohlen hatten",
+      "weil nur Wohlhabende eingeladen werden sollten"
+    ],
+    "answerIndex": 0,
+    "explanation": "Die junge Gemeinschaft war klein und schutzlos. Die stille, persönliche Einladung im vertrauten Kreis war eine weise Strategie, um sie zu festigen und zu schützen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-adult-002",
+    "station": 3,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Was machte die Frage des Propheten ﷺ am Hügel Safa rhetorisch so wirkungsvoll?",
+    "options": [
+      "Sie versprach den Quraisch Handelsvorteile",
+      "Sie war in kunstvoller Versform gehalten",
+      "Sie knüpfte an seinen über Jahre bewährten Ruf der Wahrhaftigkeit an",
+      "Sie wurde von Dichtern vorgetragen"
+    ],
+    "answerIndex": 2,
+    "explanation": "Bevor er die Botschaft verkündete, ließ er die Quraisch selbst bestätigen, dass sie ihn nie beim Lügen erlebt hatten. So baute er auf seiner bekannten Wahrhaftigkeit als „al-Amin“ auf.",
+    "source": "Sahih al-Buchari",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-adult-003",
+    "station": 3,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Welche Sure wurde im Zusammenhang mit Abu Lahabs Ablehnung offenbart?",
+    "options": ["Sure an-Nasr (110)", "Sure al-Masad (111)", "Sure Quraisch (106)", "Sure al-Fil (105)"],
+    "answerIndex": 1,
+    "explanation": "Abu Lahab wies den Propheten ﷺ beim öffentlichen Ruf schroff zurück. Sure al-Masad (111) bezieht sich auf ihn und seine Frau.",
+    "source": "Koran, Sure 111 (al-Masad); Sahih al-Buchari",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-adult-004",
+    "station": 3,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Wie wurde Bilal (r.a.) für seinen Glauben gequält?",
+    "options": [
+      "Man verbannte ihn aus Mekka nach Taif",
+      "Man nahm ihm sein gesamtes Vermögen",
+      "Man sperrte ihn jahrelang ein",
+      "Man legte ihm in der Mittagshitze einen schweren Stein auf die Brust"
+    ],
+    "answerIndex": 3,
+    "explanation": "Umayya ibn Chalaf ließ Bilal (r.a.) in der glühenden Mittagshitze auf den heißen Boden legen und einen schweren Stein auf seine Brust wälzen. Dennoch bekannte er: „Ahad, Ahad“.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-bilal-steadfastness"
+  },
+  {
+    "id": "st03-adult-005",
+    "station": 3,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Welcher Gefährte kaufte Bilal (r.a.) aus der Sklaverei frei?",
+    "options": ["Uthman ibn Affan (r.a.)", "Abu Bakr (r.a.)", "Ali (r.a.)", "az-Zubair (r.a.)"],
+    "answerIndex": 1,
+    "explanation": "Abu Bakr (r.a.) kaufte Bilal (r.a.) frei und beendete damit seine Qualen. Er setzte sein Vermögen mehrfach ein, um verfolgte Muslime freizukaufen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-bilal-steadfastness"
+  },
+  {
+    "id": "st03-adult-006",
+    "station": 3,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Welcher dieser Gefährten kam durch die Einladung von Abu Bakr (r.a.) früh zum Islam?",
+    "options": ["Talha (r.a.)", "Hamza (r.a.)", "Umar (r.a.)", "al-Abbas (r.a.)"],
+    "answerIndex": 0,
+    "explanation": "Durch Abu Bakr (r.a.) fanden unter anderem Talha (r.a.), Uthman ibn Affan (r.a.) und az-Zubair (r.a.) früh zum Islam. Seine vertrauensvolle Art öffnete vielen den Weg.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-first-believers"
+  },
+  {
+    "id": "st03-adult-007",
+    "station": 3,
+    "level": "adult",
+    "type": "true_false",
+    "question": "Die Phase der stillen Einladung dauerte etwa drei Jahre (ca. 610–613).",
+    "answer": true,
+    "explanation": "Das ist richtig. Etwa drei Jahre lang verlief die Einladung im Verborgenen, bevor der öffentliche Ruf vom Hügel Safa erging.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-adult-008",
+    "station": 3,
+    "level": "adult",
+    "type": "true_false",
+    "question": "Unter der Folter widerrief Bilal (r.a.) öffentlich seinen Glauben.",
+    "answer": false,
+    "explanation": "Das ist nicht korrekt. Bilal (r.a.) blieb trotz schwerster Qualen standhaft und wiederholte sein Bekenntnis „Ahad, Ahad“ – „Einer, Einer“.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-bilal-steadfastness"
+  },
+  {
+    "id": "st03-adult-009",
+    "station": 3,
+    "level": "adult",
+    "type": "true_false",
+    "question": "Ali (r.a.) wuchs im Haushalt des Propheten ﷺ auf und nahm als Junge den Islam an.",
+    "answer": true,
+    "explanation": "Das ist richtig. Ali (r.a.) lebte im Haushalt des Propheten ﷺ und gilt als der erste Junge, der den Islam annahm.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-first-believers"
+  },
+  {
+    "id": "st03-adult-010",
+    "station": 3,
+    "level": "adult",
+    "type": "order",
+    "question": "Ordne die Entwicklung der frühen Gemeinschaft chronologisch.",
+    "items": [
+      "Khadidscha (r.a.) nimmt als erster Mensch die Botschaft an.",
+      "Ali (r.a.), Zaid ibn Haritha (r.a.) und Abu Bakr (r.a.) folgen aus dem engsten Kreis.",
+      "Durch Abu Bakr (r.a.) finden weitere Gefährten wie Uthman ibn Affan (r.a.) zum Islam.",
+      "Die wachsende Gemeinschaft trifft sich im Haus des al-Arqam."
+    ],
+    "explanation": "Der Islam verbreitete sich zuerst im engsten Kreis, dann über vertrauensvolle Einladungen wie die von Abu Bakr (r.a.). Das Haus des al-Arqam wurde zum Zentrum der wachsenden Gemeinschaft.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-first-believers"
+  },
+  {
+    "id": "st03-adult-011",
+    "station": 3,
+    "level": "adult",
+    "type": "order",
+    "question": "Ordne den Ablauf des öffentlichen Rufes am Hügel Safa chronologisch.",
+    "items": [
+      "Der Prophet ﷺ steigt auf den Hügel Safa und ruft die Sippen der Quraisch zusammen.",
+      "Er fragt sie sinngemäß, ob sie ihm glauben würden, wenn er vor einem Heer hinter dem Berg warnte.",
+      "Sie antworten sinngemäß, sie hätten ihn nie lügen hören – und er verkündet die Botschaft.",
+      "Abu Lahab weist ihn schroff zurück."
+    ],
+    "explanation": "Der Prophet ﷺ baute die Verkündigung weise auf dem Vertrauen der Quraisch auf. Abu Lahabs Zurückweisung beantwortete der Koran mit Sure al-Masad (111).",
+    "source": "Sahih al-Buchari; Koran, Sure 111 (al-Masad)",
+    "pearlId": "pearl-wise-invitation"
+  },
+  {
+    "id": "st03-adult-012",
+    "station": 3,
+    "level": "adult",
+    "type": "match",
+    "question": "Ordne die ersten Muslime ihrer Stellung zu.",
+    "pairs": [
+      { "left": "Khadidscha (r.a.)", "right": "erster Mensch, der die Botschaft annahm" },
+      { "left": "Abu Bakr (r.a.)", "right": "erster freier Mann unter den Muslimen" },
+      { "left": "Ali (r.a.)", "right": "erster Junge unter den Muslimen" },
+      { "left": "Zaid ibn Haritha (r.a.)", "right": "Freigelassener unter den ersten Muslimen" }
+    ],
+    "explanation": "Die ersten Gläubigen kamen aus dem engsten Umfeld des Propheten ﷺ: seine Frau, sein bester Freund, sein junger Cousin und sein Freigelassener.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-first-believers"
+  },
+  {
+    "id": "st03-adult-013",
+    "station": 3,
+    "level": "adult",
+    "type": "match",
+    "question": "Ordne die Begriffe ihrer Bedeutung in der frühen mekkanischen Zeit zu.",
+    "pairs": [
+      { "left": "Dar al-Arqam", "right": "Haus der Unterweisung in der geheimen Phase" },
+      { "left": "Abessinien", "right": "Herkunftsland von Bilal (r.a.)" },
+      { "left": "„Ahad, Ahad“", "right": "standhafter Ruf Bilals (r.a.) unter der Folter" }
+    ],
+    "explanation": "Das Haus des al-Arqam bot der jungen Gemeinschaft Schutz und Unterweisung. Bilal (r.a.) aus Abessinien wurde mit seinem Ruf „Ahad, Ahad“ zum Vorbild der Standhaftigkeit.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-bilal-steadfastness"
+  },
+  {
+    "id": "st03-adult-014",
+    "station": 3,
+    "level": "adult",
+    "type": "match",
+    "question": "Ordne die Begriffe ihrer Bedeutung zu.",
+    "pairs": [
+      { "left": "Daʿwa", "right": "Einladung zum Glauben an den einen Gott" },
+      { "left": "Quraisch", "right": "herrschender Stamm in Mekka" },
+      { "left": "Tauhid", "right": "Bekenntnis zur Einheit Allahs" }
+    ],
+    "explanation": "Diese Grundbegriffe prägen die frühe mekkanische Zeit: Die Daʿwa rief die Quraisch zum Tauhid, dem Glauben an den einen Gott.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-wise-invitation"
+  }
+]

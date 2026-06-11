@@ -1,0 +1,637 @@
+[
+  {
+    "id": "st04-kids-001",
+    "station": 4,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Was taten viele Quraisch, als immer mehr Menschen in Mekka Muslime wurden?",
+    "options": [
+      "Sie freuten sich mit ihnen",
+      "Sie zogen aus der Stadt weg",
+      "Sie behandelten die Muslime schlecht",
+      "Sie bauten ihnen ein neues Haus"
+    ],
+    "answerIndex": 2,
+    "explanation": "Viele Quraisch wollten den Islam nicht annehmen. Sie verspotteten die Muslime und behandelten sie schlecht. Die Muslime blieben trotzdem geduldig.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-patience-trial"
+  },
+  {
+    "id": "st04-kids-002",
+    "station": 4,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wie heißt der Sohn von Yasir (r.a.) und Sumayya (r.a.)?",
+    "options": [
+      "Ammar (r.a.)",
+      "Ali (r.a.)",
+      "Umar (r.a.)",
+      "Zaid (r.a.)"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ammar (r.a.) war der Sohn von Yasir (r.a.) und Sumayya (r.a.). Die ganze Familie glaubte an Allah und blieb tapfer, auch als es sehr schwer wurde.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-yasir-family"
+  },
+  {
+    "id": "st04-kids-003",
+    "station": 4,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Was versprach der Prophet ﷺ der Familie Yasirs (r.a.) sinngemäß, als sie schlecht behandelt wurde?",
+    "options": [
+      "Viel Geld",
+      "Das Paradies",
+      "Ein großes Haus",
+      "Eine Reise"
+    ],
+    "answerIndex": 1,
+    "explanation": "Es wird überliefert, dass der Prophet ﷺ der Familie Yasirs (r.a.) sinngemäß Geduld zusprach und ihnen das Paradies verhieß. Das gab ihnen Kraft.",
+    "source": "al-Hakim, al-Mustadrak",
+    "pearlId": "pearl-yasir-family"
+  },
+  {
+    "id": "st04-kids-004",
+    "station": 4,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wohin mussten die Familien des Propheten ﷺ während des Boykotts ziehen?",
+    "options": [
+      "In eine andere Stadt",
+      "Auf ein Schiff",
+      "In die Wüste nach Süden",
+      "In ein Tal bei Mekka"
+    ],
+    "answerIndex": 3,
+    "explanation": "Die Sippen Banu Haschim und Banu al-Muttalib mussten in das Tal Abu Talibs ziehen. Dort hielten sie als große Familie zusammen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-kids-005",
+    "station": 4,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Was durften die anderen Mekkaner während des Boykotts nicht tun?",
+    "options": [
+      "In der Stadt bleiben",
+      "Mit den eingesperrten Familien Handel treiben",
+      "Zur Kaaba gehen",
+      "Wasser holen"
+    ],
+    "answerIndex": 1,
+    "explanation": "Der Boykott verbot den Handel mit den eingesperrten Familien. Darum hatten sie oft Hunger. Mutige Menschen halfen ihnen trotzdem heimlich.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-kids-006",
+    "station": 4,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wo hängten die Quraisch ihr Boykott-Blatt auf?",
+    "options": [
+      "An einem Baum",
+      "An einem Stadttor",
+      "In der Kaaba",
+      "Auf einem Berg"
+    ],
+    "answerIndex": 2,
+    "explanation": "Die Quraisch schrieben ihren Beschluss auf ein Blatt und hängten es in der Kaaba auf. So sollte sich jeder daran halten.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-kids-007",
+    "station": 4,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wie blieben die Muslime in dieser schweren Zeit?",
+    "options": [
+      "Geduldig und stark im Glauben",
+      "Wütend und gemein",
+      "Faul und müde",
+      "Ängstlich und still für immer"
+    ],
+    "answerIndex": 0,
+    "explanation": "Die Muslime übten Sabr, das heißt Geduld. Im Koran heißt es sinngemäß, dass mit jeder Erschwernis eine Erleichterung kommt (Sure 94:5–6).",
+    "source": "Koran, Sure 94",
+    "pearlId": "pearl-patience-trial"
+  },
+  {
+    "id": "st04-kids-008",
+    "station": 4,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wer half dabei, den Boykott zu beenden?",
+    "options": [
+      "Ein fremder König",
+      "Gerechte Männer aus Mekka",
+      "Eine Karawane aus Syrien",
+      "Die Kinder der Stadt"
+    ],
+    "answerIndex": 1,
+    "explanation": "Einige gerechte Männer aus Mekka fanden den Boykott unfair. Sie setzten sich dafür ein, dass das Blatt zerrissen wurde. So endete die schwere Zeit.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-kids-009",
+    "station": 4,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Sumayya (r.a.) blieb ihrem Glauben treu, auch als es sehr schwer für sie war.",
+    "answer": true,
+    "explanation": "Sumayya (r.a.) war sehr mutig. Sie hielt an ihrem Glauben fest, bis zum Ende. Sie gilt als erste Märtyrerin des Islam.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-yasir-family"
+  },
+  {
+    "id": "st04-kids-010",
+    "station": 4,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Die Muslime gaben ihren Glauben auf, als sie schlecht behandelt wurden.",
+    "answer": false,
+    "explanation": "Nein, die Muslime hielten an ihrem Glauben fest. Sie vertrauten auf Allah und blieben geduldig, auch in schweren Zeiten.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-patience-trial"
+  },
+  {
+    "id": "st04-kids-011",
+    "station": 4,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Während des Boykotts hatten die Familien im Tal oft Hunger.",
+    "answer": true,
+    "explanation": "Weil niemand mit ihnen Handel treiben durfte, gab es zu wenig Essen. Sie halfen einander und teilten, was sie hatten.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-kids-012",
+    "station": 4,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Der Boykott dauerte nur einen einzigen Tag.",
+    "answer": false,
+    "explanation": "Der Boykott dauerte eine sehr lange Zeit, ungefähr drei Jahre. Die Familien hielten die ganze Zeit zusammen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-kids-013",
+    "station": 4,
+    "level": "kids",
+    "type": "order",
+    "question": "Bringe die Ereignisse in die richtige Reihenfolge!",
+    "items": [
+      "Immer mehr Menschen in Mekka werden Muslime",
+      "Die Quraisch behandeln die Muslime schlecht",
+      "Die Quraisch beginnen den Boykott",
+      "Gerechte Männer beenden den Boykott"
+    ],
+    "explanation": "Zuerst wuchs die Zahl der Muslime, dann kam die schlechte Behandlung und der Boykott. Am Ende halfen gerechte Männer, den Boykott zu beenden.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-kids-014",
+    "station": 4,
+    "level": "kids",
+    "type": "match",
+    "question": "Wer gehört zu wem? Ordne die Familie Yasirs (r.a.) richtig zu!",
+    "pairs": [
+      { "left": "Yasir (r.a.)", "right": "der Vater der Familie" },
+      { "left": "Sumayya (r.a.)", "right": "die mutige Mutter" },
+      { "left": "Ammar (r.a.)", "right": "der Sohn, der überlebte" }
+    ],
+    "explanation": "Yasir (r.a.), Sumayya (r.a.) und ihr Sohn Ammar (r.a.) waren eine gläubige Familie. Sie blieben tapfer, auch als sie schlecht behandelt wurden.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-yasir-family"
+  },
+  {
+    "id": "st04-youth-001",
+    "station": 4,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Welche Muslime litten in Mekka besonders unter der Verfolgung?",
+    "options": [
+      "Die reichen Händler",
+      "Die Anführer der Quraisch",
+      "Schwache und Sklaven ohne Schutz",
+      "Die Besucher von außerhalb"
+    ],
+    "answerIndex": 2,
+    "explanation": "Wer keinen Schutz durch eine angesehene Sippe hatte, war der Verfolgung besonders ausgesetzt. Vor allem Sklaven und Schwache wurden misshandelt.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-yasir-family"
+  },
+  {
+    "id": "st04-youth-002",
+    "station": 4,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Wer gilt als erste Märtyrerin des Islam?",
+    "options": [
+      "Khadidscha (r.a.)",
+      "Sumayya (r.a.)",
+      "Umm Salama (r.a.)",
+      "Ruqayya (r.a.)"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sumayya (r.a.), die Mutter Ammars (r.a.), starb unter der Verfolgung der Quraisch. Sie gilt als erste Märtyrerin des Islam.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-yasir-family"
+  },
+  {
+    "id": "st04-youth-003",
+    "station": 4,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Welche zwei Sippen waren vom Boykott der Quraisch betroffen?",
+    "options": [
+      "Banu Haschim und Banu al-Muttalib",
+      "Banu Umayya und Banu Machzum",
+      "Aus und Chazradsch",
+      "Thaqif und Hawazin"
+    ],
+    "answerIndex": 0,
+    "explanation": "Die Quraisch sperrten die Sippen Banu Haschim und Banu al-Muttalib in das Tal Abu Talibs. Beide Sippen hielten in dieser Zeit fest zusammen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-youth-004",
+    "station": 4,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Wie lange dauerte der Boykott ungefähr?",
+    "options": [
+      "Einige Wochen",
+      "Ein halbes Jahr",
+      "Etwa drei Jahre",
+      "Etwa zehn Jahre"
+    ],
+    "answerIndex": 2,
+    "explanation": "Der Boykott dauerte ungefähr drei Jahre. In dieser Zeit litten die eingeschlossenen Familien unter Hunger und Mangel.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-youth-005",
+    "station": 4,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Was verbot das Boykott-Dokument unter anderem?",
+    "options": [
+      "Das Beten in der Stadt",
+      "Handel und Heirat mit den betroffenen Sippen",
+      "Das Reisen außerhalb Arabiens",
+      "Das Halten von Tieren"
+    ],
+    "answerIndex": 1,
+    "explanation": "Das Dokument verbot, mit den Sippen Banu Haschim und Banu al-Muttalib Handel zu treiben oder Ehen zu schließen. So sollten sie unter Druck gesetzt werden.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-youth-006",
+    "station": 4,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Wodurch waren manche Muslime vor der schlimmsten Verfolgung etwas geschützt?",
+    "options": [
+      "Durch eine Mauer um ihre Häuser",
+      "Durch Soldaten aus Abessinien",
+      "Durch Geldzahlungen an die Quraisch",
+      "Durch angesehene Verwandte"
+    ],
+    "answerIndex": 3,
+    "explanation": "In Mekka galt der Schutz der Sippe sehr viel. Muslime mit angesehenen Verwandten wurden deshalb weniger hart angegriffen als Schutzlose.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-patience-trial"
+  },
+  {
+    "id": "st04-youth-007",
+    "station": 4,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Was war nach verbreiteter Überlieferung mit dem Boykott-Dokument geschehen, als der Boykott endete?",
+    "options": [
+      "Es war gestohlen worden",
+      "Termiten hatten es bis auf den Gottesnamen zerfressen",
+      "Es war im Regen verblasst",
+      "Es war verbrannt worden"
+    ],
+    "answerIndex": 1,
+    "explanation": "Nach verbreiteter Überlieferung hatten Termiten das Dokument zerfressen, sodass nur der Gottesname übrig blieb. Gerechte Mekkaner zerrissen das Abkommen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-youth-008",
+    "station": 4,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Ammar (r.a.), der Sohn Yasirs (r.a.) und Sumayyas (r.a.), überlebte die Verfolgung.",
+    "answer": true,
+    "explanation": "Ammar (r.a.) überlebte die schwere Zeit der Verfolgung. Seine Eltern Yasir (r.a.) und Sumayya (r.a.) starben unter den Misshandlungen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-yasir-family"
+  },
+  {
+    "id": "st04-youth-009",
+    "station": 4,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Der Boykott wurde von den Herrschern Persiens gegen Mekka verhängt.",
+    "answer": false,
+    "explanation": "Der Boykott kam nicht von außen. Die Quraisch in Mekka selbst beschlossen ihn gegen die Sippen Banu Haschim und Banu al-Muttalib.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-youth-010",
+    "station": 4,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Das Boykott-Dokument wurde in der Kaaba aufgehängt.",
+    "answer": true,
+    "explanation": "Die Quraisch hängten das Dokument in der Kaaba auf, um dem Beschluss besonderes Gewicht zu geben. So sollte sich jeder daran gebunden fühlen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-youth-011",
+    "station": 4,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Der Prophet ﷺ riet den verfolgten Muslimen, sich mit Gewalt zu rächen.",
+    "answer": false,
+    "explanation": "Es wird überliefert, dass der Prophet ﷺ den Verfolgten sinngemäß Geduld zusprach. In Mekka setzten die Muslime auf Standhaftigkeit, nicht auf Vergeltung.",
+    "source": "al-Hakim, al-Mustadrak",
+    "pearlId": "pearl-patience-trial"
+  },
+  {
+    "id": "st04-youth-012",
+    "station": 4,
+    "level": "youth",
+    "type": "order",
+    "question": "Bringe die Ereignisse der Verfolgungszeit in die richtige Reihenfolge!",
+    "items": [
+      "Der Widerstand der Quraisch gegen die Botschaft wächst",
+      "Schwache und schutzlose Muslime werden misshandelt",
+      "Yasir (r.a.) und Sumayya (r.a.) sterben unter der Verfolgung",
+      "Die Quraisch beschließen den Boykott"
+    ],
+    "explanation": "Aus Spott wurde offene Verfolgung, die besonders die Schutzlosen traf. Schließlich versuchten die Quraisch, mit dem Boykott ganze Sippen zu brechen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-patience-trial"
+  },
+  {
+    "id": "st04-youth-013",
+    "station": 4,
+    "level": "youth",
+    "type": "order",
+    "question": "Bringe die Stationen des Boykotts in die richtige Reihenfolge!",
+    "items": [
+      "Das Boykott-Dokument wird in der Kaaba aufgehängt",
+      "Die Sippen leben eingeschlossen im Tal Abu Talibs",
+      "Gerechte Mekkaner setzen sich gegen das Abkommen ein",
+      "Das Abkommen wird zerrissen und der Boykott endet"
+    ],
+    "explanation": "Der Boykott begann mit dem Dokument in der Kaaba und dauerte etwa drei Jahre. Am Ende sorgten gerechte Mekkaner dafür, dass das Abkommen zerrissen wurde.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-youth-014",
+    "station": 4,
+    "level": "youth",
+    "type": "match",
+    "question": "Ordne die Begriffe und Personen richtig zu!",
+    "pairs": [
+      { "left": "Banu Haschim", "right": "Sippe des Propheten ﷺ" },
+      { "left": "Tal Abu Talibs", "right": "Ort der Absperrung während des Boykotts" },
+      { "left": "Sumayya (r.a.)", "right": "erste Märtyrerin des Islam" },
+      { "left": "Ammar (r.a.)", "right": "überlebte die Verfolgung" }
+    ],
+    "explanation": "Die Sippe des Propheten ﷺ, Banu Haschim, wurde mit Banu al-Muttalib im Tal Abu Talibs eingeschlossen. Sumayya (r.a.) und ihr Sohn Ammar (r.a.) stehen für die Standhaftigkeit der Verfolgten.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-yasir-family"
+  },
+  {
+    "id": "st04-adult-001",
+    "station": 4,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "In welchen Zeitraum fallen die verschärften Prüfungen in Mekka und der Boykott?",
+    "options": [
+      "Etwa 600–605",
+      "Etwa 613–619",
+      "Etwa 622–625",
+      "Etwa 630–632"
+    ],
+    "answerIndex": 1,
+    "explanation": "Nach Beginn der öffentlichen Verkündigung verschärfte sich der Widerstand der Quraisch ab etwa 613. Der Boykott fiel in die Jahre vor dem Jahr der Trauer (ca. 619).",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-patience-trial"
+  },
+  {
+    "id": "st04-adult-002",
+    "station": 4,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Welche Aussage enthalten die Verse 5–6 der Sure 94 sinngemäß?",
+    "options": [
+      "Der Sieg gehört den Stärkeren",
+      "Die Auswanderung ist Pflicht",
+      "Mit der Erschwernis kommt Erleichterung",
+      "Der Handel ist erlaubt worden"
+    ],
+    "answerIndex": 2,
+    "explanation": "Sure 94:5–6 sagt sinngemäß, dass mit der Erschwernis Erleichterung kommt. Diese Zusage trug die Muslime durch die Jahre der Prüfung.",
+    "source": "Koran, Sure 94",
+    "pearlId": "pearl-patience-trial"
+  },
+  {
+    "id": "st04-adult-003",
+    "station": 4,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "In welchem Werk wird die sinngemäße Paradiesverheißung an die Familie Yasirs (r.a.) überliefert?",
+    "options": [
+      "al-Hakim, al-Mustadrak",
+      "Muwatta des Malik",
+      "Sunan an-Nasaʾi",
+      "Tafsir at-Tabari"
+    ],
+    "answerIndex": 0,
+    "explanation": "Es wird bei al-Hakim überliefert, dass der Prophet ﷺ der Familie Yasirs (r.a.) sinngemäß Geduld zusprach und ihnen das Paradies verhieß.",
+    "source": "al-Hakim, al-Mustadrak",
+    "pearlId": "pearl-yasir-family"
+  },
+  {
+    "id": "st04-adult-004",
+    "station": 4,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Was blieb nach verbreiteter Überlieferung vom Boykott-Dokument übrig, als es geholt wurde?",
+    "options": [
+      "Die Liste der Unterzeichner",
+      "Nur der Gottesname",
+      "Das Siegel der Quraisch",
+      "Gar nichts"
+    ],
+    "answerIndex": 1,
+    "explanation": "Nach verbreiteter Überlieferung hatten Termiten das Dokument zerfressen und nur den Gottesnamen übrig gelassen. Diese Einzelheit wird in der Sira-Literatur berichtet.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-adult-005",
+    "station": 4,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Wodurch kam das Ende des Boykotts zustande?",
+    "options": [
+      "Durch ein Urteil des Negus",
+      "Durch einen Aufstand der Sklaven",
+      "Durch eine Hungersnot in ganz Mekka",
+      "Durch gerechte Mekkaner, die das Abkommen zerrissen"
+    ],
+    "answerIndex": 3,
+    "explanation": "Eine Gruppe gerechter Mekkaner empfand den Boykott als Unrecht und setzte sich für sein Ende ein. Sie sorgten dafür, dass das Abkommen zerrissen wurde.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-adult-006",
+    "station": 4,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Warum traf der Boykott neben Banu Haschim auch die Sippe Banu al-Muttalib?",
+    "options": [
+      "Sie hatte den Boykott selbst gebrochen",
+      "Sie stand zu Banu Haschim und trug deren Schutz mit",
+      "Sie war die reichste Sippe Mekkas",
+      "Sie stammte nicht aus Mekka"
+    ],
+    "answerIndex": 1,
+    "explanation": "Banu al-Muttalib hielt zu Banu Haschim und trug den Schutz des Propheten ﷺ mit. Deshalb richtete sich der Boykott gegen beide Sippen gemeinsam.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-adult-007",
+    "station": 4,
+    "level": "adult",
+    "type": "true_false",
+    "question": "Das Boykott-Dokument verbot auch Eheschließungen mit den betroffenen Sippen.",
+    "answer": true,
+    "explanation": "Neben dem Handelsverbot untersagte das Abkommen auch Heiraten mit Banu Haschim und Banu al-Muttalib. So sollten die Sippen vollständig isoliert werden.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-adult-008",
+    "station": 4,
+    "level": "adult",
+    "type": "true_false",
+    "question": "Der Boykott gegen Banu Haschim und Banu al-Muttalib dauerte etwa zehn Jahre.",
+    "answer": false,
+    "explanation": "Der Boykott dauerte nach der klassischen Sira etwa drei Jahre, nicht zehn. Schon diese Zeit bedeutete für die Eingeschlossenen Hunger und große Not.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-adult-009",
+    "station": 4,
+    "level": "adult",
+    "type": "true_false",
+    "question": "Sumayya (r.a.) gilt nach der klassischen Sira als erste Märtyrerin des Islam.",
+    "answer": true,
+    "explanation": "Sumayya (r.a.) starb unter der Verfolgung der Quraisch und gilt als erste Märtyrerin des Islam. Ihr Mann Yasir (r.a.) starb ebenfalls, ihr Sohn Ammar (r.a.) überlebte.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-yasir-family"
+  },
+  {
+    "id": "st04-adult-010",
+    "station": 4,
+    "level": "adult",
+    "type": "order",
+    "question": "Bringe die Entwicklung der mekkanischen Verfolgung in die korrekte chronologische Reihenfolge!",
+    "items": [
+      "Die öffentliche Verkündigung stößt auf wachsenden Widerstand der Quraisch",
+      "Schutzlose Muslime werden misshandelt",
+      "Yasir (r.a.) und Sumayya (r.a.) sterben unter der Verfolgung",
+      "Die Quraisch verhängen den Boykott gegen Banu Haschim und Banu al-Muttalib"
+    ],
+    "explanation": "Die Verfolgung steigerte sich stufenweise: vom Spott über die Misshandlung der Schutzlosen bis zum umfassenden Boykott ganzer Sippen.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-patience-trial"
+  },
+  {
+    "id": "st04-adult-011",
+    "station": 4,
+    "level": "adult",
+    "type": "order",
+    "question": "Bringe die Phasen des Boykotts in die korrekte chronologische Reihenfolge!",
+    "items": [
+      "Das Boykott-Dokument wird in der Kaaba aufgehängt",
+      "Banu Haschim und Banu al-Muttalib leben rund drei Jahre eingeschlossen im Tal Abu Talibs",
+      "Gerechte Mekkaner zerreißen das Abkommen",
+      "Die Sippen kehren in ihre Wohnviertel zurück"
+    ],
+    "explanation": "Vom Aufhängen des Dokuments bis zur Rückkehr der Sippen vergingen rund drei Jahre. Das Ende kam durch den Einsatz gerechter Mekkaner.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-adult-012",
+    "station": 4,
+    "level": "adult",
+    "type": "match",
+    "question": "Ordne die Begriffe ihrer Bedeutung zu!",
+    "pairs": [
+      { "left": "Sabr", "right": "Geduld und Standhaftigkeit in der Prüfung" },
+      { "left": "Boykott-Dokument", "right": "Schriftstück, das in der Kaaba aufgehängt wurde" },
+      { "left": "Tal Abu Talibs", "right": "Ort der dreijährigen Absperrung" },
+      { "left": "Banu al-Muttalib", "right": "mit Banu Haschim eingeschlossene Sippe" }
+    ],
+    "explanation": "Diese Begriffe gehören zum Kern der Boykottjahre. Sabr, die geduldige Standhaftigkeit, prägte die Haltung der Muslime in dieser Zeit.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-solidarity"
+  },
+  {
+    "id": "st04-adult-013",
+    "station": 4,
+    "level": "adult",
+    "type": "match",
+    "question": "Ordne die Personen der Familie Yasirs (r.a.) ihrem Schicksal zu!",
+    "pairs": [
+      { "left": "Yasir (r.a.)", "right": "starb unter der Verfolgung" },
+      { "left": "Sumayya (r.a.)", "right": "gilt als erste Märtyrerin des Islam" },
+      { "left": "Ammar (r.a.)", "right": "überlebte die Verfolgung" }
+    ],
+    "explanation": "Die Familie Yasirs (r.a.) gehörte zu den am härtesten Verfolgten. Es wird überliefert, dass der Prophet ﷺ ihnen sinngemäß Geduld zusprach und das Paradies verhieß.",
+    "source": "al-Hakim, al-Mustadrak",
+    "pearlId": "pearl-yasir-family"
+  },
+  {
+    "id": "st04-adult-014",
+    "station": 4,
+    "level": "adult",
+    "type": "match",
+    "question": "Ordne die Quellen und Verse ihrem Inhalt zu!",
+    "pairs": [
+      { "left": "Sure 94:5–6", "right": "mit der Erschwernis kommt Erleichterung" },
+      { "left": "al-Hakim, al-Mustadrak", "right": "sinngemäße Paradiesverheißung an die Familie Yasirs (r.a.)" },
+      { "left": "Ibn Hisham, as-Sira an-nabawiyya", "right": "klassische Darstellung von Verfolgung und Boykott" }
+    ],
+    "explanation": "Quellenbewusstsein gehört zum Studium der Sira. Koranverse, Hadith-Werke und die klassische Sira-Literatur ergänzen einander.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-patience-trial"
+  }
+]

@@ -1,0 +1,572 @@
+[
+  {
+    "id": "st02-kids-001",
+    "station": 2,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wohin ging Muhammad ﷺ gern, um in Ruhe nachzudenken?",
+    "options": ["auf den Markt von Mekka", "in einen Palmengarten", "in die Höhle Hira", "ans Meer"],
+    "answerIndex": 2,
+    "explanation": "Muhammad ﷺ zog sich gern in die stille Höhle Hira zurück. Dort konnte er in Ruhe nachdenken und beten.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-kids-002",
+    "station": 2,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wie heißt der Engel, der Muhammad ﷺ die Offenbarung brachte?",
+    "options": ["Mikail", "Dschibril", "Israfil", "Malik"],
+    "answerIndex": 1,
+    "explanation": "Der Engel Dschibril kam zu Muhammad ﷺ in die Höhle Hira und brachte ihm die ersten Worte des Korans.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-kids-003",
+    "station": 2,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Was war das erste Wort, das der Engel zu Muhammad ﷺ sagte?",
+    "options": ["„Lies!“", "„Schlafe!“", "„Komm!“", "„Schreibe!“"],
+    "answerIndex": 0,
+    "explanation": "Das erste Wort war „Iqra“, das bedeutet „Lies!“. So begannen die ersten Verse des Korans.",
+    "source": "Koran, Sure 96:1–5",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-kids-004",
+    "station": 2,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "In welchem Monat bekam Muhammad ﷺ die erste Offenbarung?",
+    "options": ["im Muharram", "im Schawwal", "im Radschab", "im Ramadan"],
+    "answerIndex": 3,
+    "explanation": "Die erste Offenbarung kam in einer Nacht des Ramadan. Darum ist der Ramadan ein ganz besonderer Monat.",
+    "source": "Koran, Sure 2:185",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-kids-005",
+    "station": 2,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Zu wem ging Muhammad ﷺ zuerst, als er aufgeregt nach Hause kam?",
+    "options": ["zu seinem Onkel Abu Talib", "zu Khadidscha (r.a.)", "zu Abu Bakr (r.a.)", "zu Waraqa ibn Naufal"],
+    "answerIndex": 1,
+    "explanation": "Er ging zuerst zu seiner Frau Khadidscha (r.a.). Sie hörte ihm zu und war für ihn da.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-khadija-support"
+  },
+  {
+    "id": "st02-kids-006",
+    "station": 2,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Was tat Khadidscha (r.a.), als Muhammad ﷺ große Angst hatte?",
+    "options": ["Sie tröstete und beruhigte ihn", "Sie schickte ihn wieder fort", "Sie erzählte es sofort allen Leuten", "Sie glaubte ihm nicht"],
+    "answerIndex": 0,
+    "explanation": "Khadidscha (r.a.) deckte ihn zu, tröstete ihn und sprach ihm Mut zu. So half sie ihm in einem schweren Moment.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-khadija-support"
+  },
+  {
+    "id": "st02-kids-007",
+    "station": 2,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wie heißt der Berg, auf dem die Höhle Hira liegt?",
+    "options": ["Berg Uhud", "Berg an-Nur", "Berg Arafat", "Berg Sinai"],
+    "answerIndex": 1,
+    "explanation": "Die Höhle Hira liegt am Berg an-Nur bei Mekka. „An-Nur“ bedeutet „das Licht“.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-kids-008",
+    "station": 2,
+    "level": "kids",
+    "type": "multiple_choice",
+    "question": "Wer war Waraqa ibn Naufal?",
+    "options": ["ein Händler aus Medina", "ein König", "der Cousin von Khadidscha (r.a.), ein weiser alter Mann", "ein Hirte aus der Wüste"],
+    "answerIndex": 2,
+    "explanation": "Waraqa ibn Naufal war der Cousin von Khadidscha (r.a.). Er war alt, sehr klug und kannte die alten Schriften.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-kids-009",
+    "station": 2,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Die ersten Verse des Korans beginnen mit dem Wort „Lies!“.",
+    "answer": true,
+    "explanation": "Das stimmt. Die ersten Verse beginnen mit „Lies!“. Lesen und Lernen sind im Islam von Anfang an wichtig.",
+    "source": "Koran, Sure 96:1–5",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-kids-010",
+    "station": 2,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Khadidscha (r.a.) schickte Muhammad ﷺ weg, als er Trost brauchte.",
+    "answer": false,
+    "explanation": "Das stimmt nicht. Sie deckte ihn liebevoll zu, beruhigte ihn und machte ihm Mut.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-khadija-support"
+  },
+  {
+    "id": "st02-kids-011",
+    "station": 2,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Muhammad ﷺ bekam die erste Offenbarung in der Höhle Hira.",
+    "answer": true,
+    "explanation": "Das stimmt. In der Höhle Hira kam der Engel Dschibril zu ihm und brachte die ersten Verse des Korans.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-kids-012",
+    "station": 2,
+    "level": "kids",
+    "type": "true_false",
+    "question": "Waraqa ibn Naufal sagte zu Muhammad ﷺ, seine Botschaft sei nicht wichtig.",
+    "answer": false,
+    "explanation": "Das stimmt nicht. Waraqa sagte, das sei dieselbe Botschaft, die einst zu Musa (Friede sei mit ihm) kam. Sie war also sehr wichtig.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-kids-013",
+    "station": 2,
+    "level": "kids",
+    "type": "order",
+    "question": "Bringe die Ereignisse der ersten Offenbarung in die richtige Reihenfolge.",
+    "items": [
+      "Muhammad ﷺ geht in die Höhle Hira.",
+      "Der Engel Dschibril sagt: „Lies!“",
+      "Muhammad ﷺ geht nach Hause zu Khadidscha (r.a.).",
+      "Khadidscha (r.a.) tröstet ihn."
+    ],
+    "explanation": "Zuerst war Muhammad ﷺ in der Höhle, dann kam der Engel Dschibril. Danach ging er nach Hause, und Khadidscha (r.a.) tröstete ihn.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-kids-014",
+    "station": 2,
+    "level": "kids",
+    "type": "match",
+    "question": "Ordne richtig zu.",
+    "pairs": [
+      { "left": "Höhle Hira", "right": "Ort der ersten Offenbarung" },
+      { "left": "Dschibril", "right": "der Engel der Offenbarung" },
+      { "left": "Khadidscha (r.a.)", "right": "tröstete Muhammad ﷺ" }
+    ],
+    "explanation": "In der Höhle Hira brachte der Engel Dschibril die erste Offenbarung. Zu Hause tröstete Khadidscha (r.a.) Muhammad ﷺ.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-khadija-support"
+  },
+  {
+    "id": "st02-youth-001",
+    "station": 2,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "In welcher Nacht erhielt der Prophet ﷺ die erste Offenbarung?",
+    "options": ["in der Nacht der Mitte des Schaʿban", "in Lailat al-Qadr, der Nacht der Bestimmung", "in einer Neujahrsnacht", "in der ersten Nacht des Muharram"],
+    "answerIndex": 1,
+    "explanation": "Die erste Offenbarung kam in Lailat al-Qadr, der Nacht der Bestimmung im Ramadan. Sure al-Qadr (97) spricht über diese besondere Nacht.",
+    "source": "Koran, Sure 97 (al-Qadr)",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-youth-002",
+    "station": 2,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Welche Sure enthält die ersten fünf offenbarten Verse?",
+    "options": ["Sure al-Fatiha", "Sure al-Ichlas", "Sure al-ʿAlaq", "Sure al-Masad"],
+    "answerIndex": 2,
+    "explanation": "Die Verse 1 bis 5 der Sure al-ʿAlaq waren die ersten offenbarten Verse. Sie beginnen mit „Lies im Namen deines Herrn, der erschaffen hat“.",
+    "source": "Koran, Sure 96:1–5",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-youth-003",
+    "station": 2,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Worum bat der Prophet ﷺ sinngemäß, als er erschüttert nach Hause kam?",
+    "options": ["um etwas zu essen", "sofort die Nachbarn zu rufen", "ihn einzuhüllen und zuzudecken", "ein Feuer zu entzünden"],
+    "answerIndex": 2,
+    "explanation": "Es wird überliefert, dass er sinngemäß bat: „Hüllt mich ein!“ Khadidscha (r.a.) deckte ihn zu, bis die Furcht von ihm wich.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-khadija-support"
+  },
+  {
+    "id": "st02-youth-004",
+    "station": 2,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Womit beruhigte Khadidscha (r.a.) den Propheten ﷺ sinngemäß?",
+    "options": [
+      "Allah werde ihn niemals zuschanden werden lassen, denn er tue so viel Gutes",
+      "die Quraisch würden ihn sofort zum Anführer machen",
+      "er solle das Erlebte einfach vergessen",
+      "sie würden gemeinsam Mekka für immer verlassen"
+    ],
+    "answerIndex": 0,
+    "explanation": "Khadidscha (r.a.) erinnerte ihn sinngemäß daran, dass er die Verwandtschaft pflegt, den Schwachen hilft und Gäste ehrt – Allah werde ihn niemals zuschanden werden lassen.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-khadija-support"
+  },
+  {
+    "id": "st02-youth-005",
+    "station": 2,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Was zeichnete Waraqa ibn Naufal aus?",
+    "options": [
+      "Er war ein christlicher Gelehrter, der die früheren Schriften kannte",
+      "Er war der reichste Händler Mekkas",
+      "Er war ein berühmter Dichter der Quraisch",
+      "Er war der Hüter des Brunnens Zamzam"
+    ],
+    "answerIndex": 0,
+    "explanation": "Waraqa ibn Naufal, der Cousin Khadidschas (r.a.), war ein christlicher Gelehrter. Er war alt und erblindet und kannte die früheren Schriften gut.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-youth-006",
+    "station": 2,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Womit verglich Waraqa ibn Naufal die Offenbarung sinngemäß?",
+    "options": [
+      "mit den Gedichten der Araber",
+      "mit der Botschaft, die einst zu Musa (Friede sei mit ihm) kam",
+      "mit den Erzählungen der Perser",
+      "mit einem gewöhnlichen Traum"
+    ],
+    "answerIndex": 1,
+    "explanation": "Waraqa erkannte: Das ist dieselbe Art von Botschaft, die einst zu Musa (Friede sei mit ihm) herabkam. So bestätigte er die Echtheit der Offenbarung.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-youth-007",
+    "station": 2,
+    "level": "youth",
+    "type": "multiple_choice",
+    "question": "Über welchen Zeitraum wurde der Koran insgesamt offenbart?",
+    "options": ["über etwa 23 Jahre", "in einer einzigen Nacht vollständig", "über etwa 40 Jahre", "über etwa 5 Jahre"],
+    "answerIndex": 0,
+    "explanation": "Der Koran wurde abschnittsweise über etwa 23 Jahre offenbart. So konnten die Menschen die Botschaft Schritt für Schritt lernen und leben.",
+    "source": "Koran, Sure 17:106; klassische Sira-Literatur",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-youth-008",
+    "station": 2,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Der Prophet ﷺ zog sich schon vor der ersten Offenbarung regelmäßig zur Andacht in die Höhle Hira zurück.",
+    "answer": true,
+    "explanation": "Das stimmt. Er verbrachte dort Nächte in Andacht und Besinnung, fern vom Lärm der Stadt.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-youth-009",
+    "station": 2,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Die Höhle Hira liegt auf dem Berg Uhud bei Medina.",
+    "answer": false,
+    "explanation": "Das stimmt nicht. Die Höhle Hira liegt am Berg an-Nur in der Nähe von Mekka.",
+    "source": "Ibn Hisham, as-Sira an-nabawiyya",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-youth-010",
+    "station": 2,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Waraqa ibn Naufal sagte voraus, dass das eigene Volk den Propheten ﷺ eines Tages vertreiben würde.",
+    "answer": true,
+    "explanation": "Das stimmt. Waraqa sagte sinngemäß: Niemand kam je mit so einer Botschaft, ohne angefeindet zu werden – sein Volk werde ihn vertreiben.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-youth-011",
+    "station": 2,
+    "level": "youth",
+    "type": "true_false",
+    "question": "Das erste Wort der Offenbarung war ein Befehl zu schweigen.",
+    "answer": false,
+    "explanation": "Das stimmt nicht. Das erste Wort war „Iqra“ – „Lies!“, ein Aufruf zum Lesen und Lernen im Namen des Schöpfers.",
+    "source": "Koran, Sure 96:1–5",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-youth-012",
+    "station": 2,
+    "level": "youth",
+    "type": "order",
+    "question": "Ordne die Ereignisse rund um die erste Offenbarung chronologisch.",
+    "items": [
+      "Der Prophet ﷺ zieht sich zur Andacht in die Höhle Hira zurück.",
+      "Dschibril überbringt die ersten Verse: „Lies im Namen deines Herrn …“",
+      "Der Prophet ﷺ kehrt erschüttert zu Khadidscha (r.a.) heim.",
+      "Gemeinsam besuchen sie Waraqa ibn Naufal."
+    ],
+    "explanation": "Auf den Rückzug in die Höhle folgte die erste Offenbarung. Danach kehrte er heim zu Khadidscha (r.a.), und gemeinsam suchten sie Waraqa ibn Naufal auf.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-youth-013",
+    "station": 2,
+    "level": "youth",
+    "type": "order",
+    "question": "Bringe die Schritte, mit denen Khadidscha (r.a.) den Propheten ﷺ unterstützte, in die richtige Reihenfolge.",
+    "items": [
+      "Khadidscha (r.a.) hüllt den Propheten ﷺ ein und beruhigt ihn.",
+      "Sie erinnert ihn an seine guten Taten und spricht ihm Mut zu.",
+      "Sie bringt ihn zu ihrem Cousin Waraqa ibn Naufal.",
+      "Waraqa bestätigt: Es ist die Botschaft, wie sie einst zu Musa (Friede sei mit ihm) kam."
+    ],
+    "explanation": "Khadidscha (r.a.) handelte klug: erst beruhigen, dann Mut machen und schließlich den Rat eines Wissenden einholen.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-khadija-support"
+  },
+  {
+    "id": "st02-youth-014",
+    "station": 2,
+    "level": "youth",
+    "type": "match",
+    "question": "Ordne die Begriffe richtig zu.",
+    "pairs": [
+      { "left": "Berg an-Nur", "right": "Berg, an dem die Höhle Hira liegt" },
+      { "left": "Lailat al-Qadr", "right": "Nacht der ersten Offenbarung" },
+      { "left": "Sure al-ʿAlaq", "right": "enthält die ersten offenbarten Verse" },
+      { "left": "Waraqa ibn Naufal", "right": "Gelehrter, der die Botschaft bestätigte" }
+    ],
+    "explanation": "Diese Begriffe gehören zum Beginn der Offenbarung: der Ort, die Nacht, die ersten Verse und der Gelehrte, der sie einordnete.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung; Koran, Sure 96 und 97",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-adult-001",
+    "station": 2,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Welche Sure beschreibt die Herabsendung des Korans in der Nacht der Bestimmung?",
+    "options": ["Sure al-Fil (105)", "Sure al-Qadr (97)", "Sure al-Kauthar (108)", "Sure an-Nas (114)"],
+    "answerIndex": 1,
+    "explanation": "Sure al-Qadr (97) beschreibt die Herabsendung in der Nacht der Bestimmung, die „besser ist als tausend Monate“. Diese Nacht liegt im Ramadan.",
+    "source": "Koran, Sure 97 (al-Qadr)",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-adult-002",
+    "station": 2,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Wie lautet sinngemäß der erste offenbarte Vers?",
+    "options": [
+      "„Lies im Namen deines Herrn, der erschaffen hat“",
+      "„Gepriesen sei Der, Der bei Nacht reisen ließ“",
+      "„Sprich: Er ist Allah, ein Einziger“",
+      "„Wahrlich, Wir gaben dir die Fülle“"
+    ],
+    "answerIndex": 0,
+    "explanation": "Die Offenbarung begann mit Sure al-ʿAlaq 96:1: „Lies im Namen deines Herrn, der erschaffen hat.“ Die Verse 1 bis 5 wurden in der Höhle Hira herabgesandt.",
+    "source": "Koran, Sure 96:1–5",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-adult-003",
+    "station": 2,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Mit welchen Argumenten beruhigte Khadidscha (r.a.) den Propheten ﷺ nach dem Bericht in Sahih al-Buchari sinngemäß?",
+    "options": [
+      "Er sei der stärkste Mann der Quraisch",
+      "Er stamme aus der vornehmsten Familie Mekkas",
+      "Er pflege die Verwandtschaft, helfe den Schwachen, ehre die Gäste und stehe in Not bei",
+      "Er besitze genug Reichtum, um sich zu schützen"
+    ],
+    "answerIndex": 2,
+    "explanation": "Khadidscha (r.a.) zählte sinngemäß seine guten Eigenschaften auf: Er pflege die Verwandtschaft, trage die Lasten anderer, helfe den Bedürftigen, ehre die Gäste und stehe in Not bei. Allah werde ihn deshalb niemals zuschanden werden lassen.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-khadija-support"
+  },
+  {
+    "id": "st02-adult-004",
+    "station": 2,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Was wird über die Zeit unmittelbar vor dem Höhlenerlebnis berichtet?",
+    "options": [
+      "Reisen zu Gelehrten in Syrien",
+      "Visionen am Himmel über der Kaaba",
+      "eine Stimme aus dem Inneren der Kaaba",
+      "wahrhaftige Träume, die wie das Morgenlicht eintrafen"
+    ],
+    "answerIndex": 3,
+    "explanation": "Nach Sahih al-Buchari begann die Offenbarung mit wahrhaftigen Träumen, die sich wie das Morgenlicht bewahrheiteten. Danach wurde ihm die Einsamkeit der Andacht lieb gemacht.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-adult-005",
+    "station": 2,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Was kündigte Waraqa ibn Naufal dem Propheten ﷺ sinngemäß an?",
+    "options": [
+      "dass die Offenbarung bald für immer enden würde",
+      "dass sein eigenes Volk ihn eines Tages vertreiben würde",
+      "dass er König von Mekka werden würde",
+      "dass die Byzantiner ihn unterstützen würden"
+    ],
+    "answerIndex": 1,
+    "explanation": "Waraqa sagte sinngemäß voraus, dass sein Volk ihn vertreiben würde, denn niemand brachte je eine solche Botschaft, ohne angefeindet zu werden. Er wünschte, er könnte ihm dann beistehen.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-adult-006",
+    "station": 2,
+    "level": "adult",
+    "type": "multiple_choice",
+    "question": "Wie wird der Rückzug des Propheten ﷺ in der Höhle Hira beschrieben?",
+    "options": [
+      "als Nächte der Andacht und Besinnung (tahannuth)",
+      "als geheime Handelsverhandlungen",
+      "als Vorbereitung auf die Jagd",
+      "als Treffen mit den Dichtern der Quraisch"
+    ],
+    "answerIndex": 0,
+    "explanation": "Er verbrachte mehrere Nächte in Andacht und Besinnung, in der Überlieferung „tahannuth“ genannt, bevor die Offenbarung zu ihm kam.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-adult-007",
+    "station": 2,
+    "level": "adult",
+    "type": "true_false",
+    "question": "Waraqa ibn Naufal war zum Zeitpunkt dieser Ereignisse ein alter, erblindeter Mann.",
+    "answer": true,
+    "explanation": "Das ist richtig. Waraqa war hochbetagt und erblindet. Trotz seines Alters erkannte er sofort die Bedeutung der Offenbarung.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-adult-008",
+    "station": 2,
+    "level": "adult",
+    "type": "true_false",
+    "question": "Khadidscha (r.a.) riet dem Propheten ﷺ, das Erlebte zu verheimlichen und nicht weiter darüber zu sprechen.",
+    "answer": false,
+    "explanation": "Das ist nicht korrekt. Sie beruhigte ihn, sprach ihm Mut zu und brachte ihn zu ihrem gelehrten Cousin Waraqa ibn Naufal, um Rat einzuholen.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-khadija-support"
+  },
+  {
+    "id": "st02-adult-009",
+    "station": 2,
+    "level": "adult",
+    "type": "true_false",
+    "question": "Der Koran wurde nicht auf einmal, sondern abschnittsweise über etwa 23 Jahre offenbart.",
+    "answer": true,
+    "explanation": "Das ist richtig. Die Offenbarung erstreckte sich über etwa 23 Jahre, damit die Botschaft den Menschen in Ruhe vermittelt werden konnte.",
+    "source": "Koran, Sure 17:106",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-adult-010",
+    "station": 2,
+    "level": "adult",
+    "type": "order",
+    "question": "Ordne die Ereignisse rund um den Beginn der Offenbarung chronologisch.",
+    "items": [
+      "Wahrhaftige Träume kündigen die Offenbarung an.",
+      "Der Prophet ﷺ zieht sich zur Andacht in die Höhle Hira zurück.",
+      "Dschibril überbringt in Lailat al-Qadr die ersten Verse der Sure al-ʿAlaq.",
+      "Khadidscha (r.a.) und der Prophet ﷺ suchen Waraqa ibn Naufal auf."
+    ],
+    "explanation": "Nach Sahih al-Buchari begann es mit wahrhaftigen Träumen und dem Rückzug zur Andacht. In Lailat al-Qadr kam die erste Offenbarung, danach folgte das Gespräch mit Waraqa.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-adult-011",
+    "station": 2,
+    "level": "adult",
+    "type": "order",
+    "question": "Ordne den Ablauf der Begegnung in der Höhle Hira chronologisch.",
+    "items": [
+      "Dschibril fordert den Propheten ﷺ auf zu lesen.",
+      "Der Prophet ﷺ antwortet sinngemäß, er könne nicht lesen.",
+      "Dschibril umfängt ihn fest und wiederholt die Aufforderung.",
+      "Die Verse „Lies im Namen deines Herrn …“ (96:1–5) werden herabgesandt."
+    ],
+    "explanation": "Es wird überliefert, dass Dschibril die Aufforderung mehrfach wiederholte und den Propheten ﷺ dabei fest umfing, bis die ersten Verse herabgesandt wurden.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-seeking-knowledge"
+  },
+  {
+    "id": "st02-adult-012",
+    "station": 2,
+    "level": "adult",
+    "type": "match",
+    "question": "Ordne die Suren ihrem Bezug zum Beginn der Offenbarung zu.",
+    "pairs": [
+      { "left": "Sure al-ʿAlaq (96:1–5)", "right": "die ersten offenbarten Verse" },
+      { "left": "Sure al-Qadr (97)", "right": "die Nacht der Bestimmung" },
+      { "left": "Sure al-Muzzammil (73)", "right": "„Der Eingehüllte“ – Anrede an den Propheten ﷺ" }
+    ],
+    "explanation": "Mehrere Suren nehmen Bezug auf den Beginn der Offenbarung: die ersten Verse, die besondere Nacht und die Anrede an den Eingehüllten.",
+    "source": "Koran, Suren 73, 96, 97",
+    "pearlId": "pearl-revelation"
+  },
+  {
+    "id": "st02-adult-013",
+    "station": 2,
+    "level": "adult",
+    "type": "match",
+    "question": "Ordne die Personen ihrer Rolle beim Beginn der Offenbarung zu.",
+    "pairs": [
+      { "left": "Dschibril", "right": "Engel, der die Offenbarung überbrachte" },
+      { "left": "Khadidscha (r.a.)", "right": "stützte und beruhigte den Propheten ﷺ" },
+      { "left": "Waraqa ibn Naufal", "right": "bestätigte die Echtheit der Botschaft" },
+      { "left": "Musa (Friede sei mit ihm)", "right": "empfing einst eine Botschaft derselben Art" }
+    ],
+    "explanation": "Jede dieser Personen spielte eine eigene Rolle: der Engel als Überbringer, Khadidscha (r.a.) als Stütze, Waraqa als Bestätiger – und Musa (Friede sei mit ihm) als früherer Empfänger einer solchen Botschaft.",
+    "source": "Sahih al-Buchari, Beginn der Offenbarung",
+    "pearlId": "pearl-khadija-support"
+  },
+  {
+    "id": "st02-adult-014",
+    "station": 2,
+    "level": "adult",
+    "type": "match",
+    "question": "Ordne die Begriffe und Angaben richtig zu.",
+    "pairs": [
+      { "left": "Berg an-Nur", "right": "Berg mit der Höhle Hira" },
+      { "left": "Ramadan", "right": "Monat der ersten Offenbarung" },
+      { "left": "etwa 23 Jahre", "right": "Gesamtdauer der Offenbarung des Korans" }
+    ],
+    "explanation": "Die Offenbarung begann am Berg an-Nur in einer Ramadan-Nacht und erstreckte sich insgesamt über etwa 23 Jahre.",
+    "source": "Koran, Sure 2:185; klassische Sira-Literatur",
+    "pearlId": "pearl-seeking-knowledge"
+  }
+]
