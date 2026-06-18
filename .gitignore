@@ -1,2 +1,6 @@
 *.mp4
 social-video-agent/.env
+social-video-agent/client_secret.json
+social-video-agent/youtube_token.json
+social-video-agent/__pycache__/
+social-video-agent/*/__pycache__/
