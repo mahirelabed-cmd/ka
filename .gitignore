@@ -4,3 +4,5 @@ social-video-agent/client_secret.json
 social-video-agent/youtube_token.json
 social-video-agent/__pycache__/
 social-video-agent/*/__pycache__/
+social-video-agent/.code_verifier
+social-video-agent/.flow_state.pkl
